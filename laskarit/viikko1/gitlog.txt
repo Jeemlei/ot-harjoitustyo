@@ -1,0 +1,115 @@
+commit 29a0f045a147c74af5f567d74aa6395cd8f7fa7e
+Author: Jeemlei <eemeli.ingervo@gmail.com>
+Date:   Mon Mar 16 19:43:03 2020 +0200
+
+    tiedostoja muokattu
+
+ tiedostoja/file1  | 0
+ tiedostoja/file2  | 0
+ tiedostoja/file22 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 9ef4977176364fe186772d618dab80e3e2b952e4
+Author: Jeemlei <eemeli.ingervo@gmail.com>
+Date:   Mon Mar 16 19:39:47 2020 +0200
+
+    tiedostoja lisätty
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 50129505d227c23c1efcaf6a556426a95598e2c0
+Author: Jeemlei <eemeli.ingervo@gmail.com>
+Date:   Mon Mar 16 19:25:05 2020 +0200
+
+    poistoja ja lisäyksiä
+
+ eka.txt    | 2 +-
+ kolmas.txt | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit c278007f9a3cabce842af695368505663aa0be1c
+Author: Jeemlei <eemeli.ingervo@gmail.com>
+Date:   Mon Mar 16 19:19:34 2020 +0200
+
+    uudelleen nimeäminen
+
+ eka.txt      | 32 ++++++++++++++++++++++++++++++++
+ tiedosto.txt | 32 --------------------------------
+ 2 files changed, 32 insertions(+), 32 deletions(-)
+
+commit 37b9c7cf9d36151670ae4c14af8465ffec3b52b1
+Author: Jeemlei <eemeli.ingervo@gmail.com>
+Date:   Mon Mar 16 19:10:25 2020 +0200
+
+    toinen.txt poistettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 5e0b0a6050a1c77eddfe0bb7d64c1f865909512c
+Author: Jeemlei <eemeli.ingervo@gmail.com>
+Date:   Mon Mar 16 18:50:25 2020 +0200
+
+    muokattu lorem ipsumia
+
+ tiedosto.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 58284f520c10d284159560021b356595fcc7521a
+Author: Jeemlei <eemeli.ingervo@gmail.com>
+Date:   Mon Mar 16 18:48:37 2020 +0200
+
+    lisätty lorem ipsumia
+
+ tiedosto.txt | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit 45db2382b71bdf1b1bfe2c7d9bed424a81afee37
+Author: Jeemlei <eemeli.ingervo@gmail.com>
+Date:   Mon Mar 16 18:15:03 2020 +0200
+
+    lista.txt luotu
+
+ stuff/lista.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit a3657f2094d7ae9f064f77dcf8ce05fcc115f528
+Author: Jeemlei <eemeli.ingervo@gmail.com>
+Date:   Mon Mar 16 18:09:25 2020 +0200
+
+    lisätty sisältöä
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit b1ea26d295451356ef65cefc992c6437264a500b
+Author: Jeemlei <eemeli.ingervo@gmail.com>
+Date:   Mon Mar 16 18:03:12 2020 +0200
+
+    kolmas.txt luotu
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 5197fde14e0c15e4fdfefe19dd7e0c60ac741f22
+Author: Jeemlei <eemeli.ingervo@gmail.com>
+Date:   Wed Mar 11 20:02:57 2020 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 23 +++++++++++++++++++++++
+ toinen.txt   |  0
+ 2 files changed, 23 insertions(+)
+
+commit 730cb11c89f2da51fbcc9671350a2a48b5a36b72
+Author: Jeemlei <eemeli.ingervo@gmail.com>
+Date:   Wed Mar 11 19:56:40 2020 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
