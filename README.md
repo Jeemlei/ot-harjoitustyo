@@ -1,6 +1,6 @@
 # Ohjelmistotekniikan palautusrepositorio
 
-*Repositorio sisältää viikottaiset tehtävät sekä harjoitustyön*
+*Repositorio sisältää viikottaiset tehtävät sekä harjoitustyön.*
 
 ## Tehtävät
 
