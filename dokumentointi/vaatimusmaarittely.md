@@ -15,7 +15,7 @@ Sovellus koostuu kahdesta eri näkymästä
 
 [KUVA]
 
-Sovellus aukeaa aloitusnäkymään, jossa käyttäjä voi lisätä pelaajia peliin. Pelaajien lisäämisen jälkeen pelin voi aloittaa, mikä siirtää sovelluksen pelinäkymään, jossa varsinainen pelaaminen tapahtuu.
+Sovellus aukeaa aloitusnäkymään, jossa käyttäjä voi lisätä pelaajia peliin. Pelaajien lisäämisen jälkeen pelin voi aloittaa, mikä siirtää sovelluksen pelinäkymään, jossa varsinainen pelaaminen tapahtuu. Pelinäkymässä näytetään vuorossa oleva pelaaja sekä viimeksi käännetty kortti.
 
 ## Perusversion tarjoama toiminnallisuus
 
@@ -33,7 +33,7 @@ Sovellus aukeaa aloitusnäkymään, jossa käyttäjä voi lisätä pelaajia peli
 - Nopan heittäminen
 - Pelaajan luovuttaminen
   - Tupla varmistus ennen pelaajan poistoa
-  - Mahdollisuus perua vahinko luovutus ennen pelaajan seuraavaa vuoroa
+  - Mahdollisuus perua luovutus ennen pelaajan seuraavaa vuoroa
 
 ## Jatkokehitysideoita
 
