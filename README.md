@@ -1,6 +1,6 @@
-# Ohjelmistotekniikan palautusrepositorio
+﻿# Ohjelmistotekniikan palautusrepositorio
 
-*Repositorio sisältää viikottaiset tehtävät sekä harjoitustyön.*
+*Repositorio sisältää viikottaiset tehtävät sekä harjoitustyön ja siihen liittyvät dokumentit.*
 
 ## Tehtävät
 
@@ -9,3 +9,9 @@
 [komentorivi.txt](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
 [gitlog.txt](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+
+### 2. viikko
+
+## Harjoitustyö
+
+[vaatimusmaarittely.md](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
