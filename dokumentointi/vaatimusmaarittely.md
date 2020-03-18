@@ -2,7 +2,8 @@
 
 ## Sovelluksen tarkoitus
 
-Itse kehitetyn fyysisen korttipohjaisen juomapelin toteutus sovelluksena.
+Itse kehitetyn fyysisen korttipohjaisen juomapelin toteutus sovelluksena. 
+[kortit](https://drive.google.com/drive/folders/16hBqs6dDaSH-T-GKFYN9Hh7Yt22KrmyP?usp=sharing)
 
 ## Käyttäjät
 
@@ -21,7 +22,7 @@ Sovellus aukeaa aloitusnäkymään, jossa käyttäjä voi lisätä pelaajia peli
 ### Ennen pelin alkua
 
 - Pelaajan lisääminen
-  - Pelaajanimen tulee uniikki jokaisella kyseisen kierroksen pelaajalla ja vähintään sisältää vähintään 1 merkki
+  - Pelaajanimen tulee olla uniikki jokaisella kyseisen kierroksen pelaajalla ja sisältää vähintään 1 merkki
   - Pelaajia voi lisätä korkeintaan 8
 - Pelin aloittaminen
   - Pelissä täytyy olla vähintään 3 pelaajaa lisättynä
@@ -38,9 +39,9 @@ Sovellus aukeaa aloitusnäkymään, jossa käyttäjä voi lisätä pelaajia peli
 
 Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. seuraavilla toiminnallisuuksilla
 
-- Eri korttien (47 uniikkia korttia) ominaisuuksiin liittyvän logiikan implementoinit
+- Eri korttien (46 uniikkia [korttia](https://drive.google.com/drive/folders/16hBqs6dDaSH-T-GKFYN9Hh7Yt22KrmyP?usp=sharing)) ominaisuuksiin liittyvän logiikan implementoinit
   - Korttikategoriat
-  - Hörppy/juoma laskurit pelaajille
+  - Juomalaskurit pelaajille
   - Korttien kohdistaminen tiettyihin pelaajiin
   - Pelaajien hallussa olevien kyky- ja tiketti-korttien tarkastelu ja käyttäminen
   - Aktiivisena olevien sääntö-korttien tarkastelu ja poistaminen tiketti-korteilla
