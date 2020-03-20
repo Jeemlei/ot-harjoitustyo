@@ -12,6 +12,10 @@
 
 ### 2. viikko
 
+[Maksukortti](https://github.com/Jeemlei/ot-harjoitustyo/tree/master/laskarit/viikko2/Maksukortti)
+
+[Unicafe](https://github.com/Jeemlei/ot-harjoitustyo/tree/master/laskarit/viikko2/Unicafe)
+
 ## Harjoitustyö
 
 [vaatimusmaarittely.md](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
