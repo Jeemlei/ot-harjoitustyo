@@ -1,6 +1,6 @@
 ﻿# Ohjelmistotekniikan palautusrepositorio
 
-*Repositorio sisältää viikottaiset tehtävät sekä harjoitustyön ja siihen liittyvät dokumentit.*
+*Repositorio sisältää kurssin [ohjelmistotekniikka kevät 2020](https://github.com/mluukkai/ohjelmistotekniikka-kevat-2020) viikottaiset tehtävät sekä harjoitustyön ja siihen liittyvät dokumentit.*
 
 ## Tehtävät
 
