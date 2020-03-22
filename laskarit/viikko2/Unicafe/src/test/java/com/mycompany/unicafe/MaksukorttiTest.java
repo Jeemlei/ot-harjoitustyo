@@ -21,7 +21,7 @@ public class MaksukorttiTest {
     
     @Test
     public void saldoKonstruktorillaOikein() {
-        assertThat(kortti.toString(), is("saldo: 0.10"));
+        assertThat(kortti.saldo(), is(10));
     }
     
     @Test
