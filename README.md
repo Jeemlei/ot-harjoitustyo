@@ -16,6 +16,8 @@
 
 [Unicafe](https://github.com/Jeemlei/ot-harjoitustyo/tree/master/laskarit/viikko2/Unicafe)
 
+[testikattavuus.PNG](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus.PNG)
+
 ## Harjoitustyö
 
 [vaatimusmaarittely.md](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
