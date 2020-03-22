@@ -49,7 +49,6 @@ public class MaksukorttiTest {
     
     @Test
     public void saldoaEiTarpeeksiFalse() {
-        
         assertThat(kortti.otaRahaa(11), is(false));
     }
 }
