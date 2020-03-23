@@ -54,3 +54,4 @@ Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. seura
   - Omavalintaisten korttien jättäminen pois pelistä
   - Uusien korttien lisääminen peliin (*Mahdollisesti liian monimutkainen*)
   - Itselisättyjen korttien hallinnointi ja poistaminen
+- Käyttöliittymään viides näkymä pelin ohjeille
