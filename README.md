@@ -20,6 +20,6 @@
 
 ## Harjoitustyö
 
-[vaatimusmaarittely.md](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
+[Vaatimusmäärittely](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
 
-[tuntikirjanpito.md](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentointi/tuntikirjanpito.md)
+[Työaikakirjanpito](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentointi/tuntikirjanpito.md)
