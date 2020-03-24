@@ -6,3 +6,4 @@
 | 19.3. | 2,5  | Projektin ja dokumentoinnin alustaminen |
 | 23.3. | 1    | Alustava UI suunnittelu |
 | 24.3. | 2    | Tutustumista JavaFX:n ja tiedon käsittelyn mahdollisuuksiin |
+|       | 1    | Checkstyle yms. konfigurointia |
