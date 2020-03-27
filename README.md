@@ -18,6 +18,10 @@
 
 [testikattavuus.PNG](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus.PNG)
 
+### 3. viikko
+
+[monopoli_uml.jpg](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/laskarit/viikko3/monopoli_uml.jpg)
+
 ## Harjoitustyö
 
 [Vaatimusmäärittely](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
