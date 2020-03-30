@@ -20,3 +20,27 @@ Luodaan jar-tiedosto ja käynnistetään ohjelma komennolla
 ```
 mvn compile exec:java -Dexec.mainClass=juomapeli.Main
 ```
+
+Pelkkä jar-tiedoston generointi onnistuu komennolla
+
+```
+mvn package
+```
+
+Suoritettava jar-tiedosto _Juomapeli-1.0-SNAPSHOT.jar_ löytyy hakemistosta _target/_
+
+### Testaus
+
+Testit suoritetaan komennolla
+
+```
+mvn test
+```
+
+Testikattavuusraportti luodaan komennolla
+
+```
+mvn jacoco:report
+```
+
+Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto _target/site/jacoco/index.html_
