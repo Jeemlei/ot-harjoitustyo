@@ -19,18 +19,18 @@
             <children>
                 <VBox prefHeight="200.0" prefWidth="200.0">
                     <children>
-                        <Label fx:id="player1" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="Label" />
-                        <Label fx:id="player2" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="Label" />
-                        <Label fx:id="player3" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="Label" />
-                        <Label fx:id="player4" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="Label" />
+                        <Label fx:id="player1" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="tyhjä" />
+                        <Label fx:id="player2" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="tyhjä" />
+                        <Label fx:id="player3" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="tyhjä" />
+                        <Label fx:id="player4" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="tyhjä" />
                     </children>
                 </VBox>
                 <VBox prefHeight="200.0" prefWidth="200.0">
                     <children>
-                        <Label fx:id="player5" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="Label" />
-                        <Label fx:id="player6" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="Label" />
-                        <Label fx:id="player7" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="Label" />
-                        <Label fx:id="player8" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="Label" />
+                        <Label fx:id="player5" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="tyhjä" />
+                        <Label fx:id="player6" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="tyhjä" />
+                        <Label fx:id="player7" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="tyhjä" />
+                        <Label fx:id="player8" alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="tyhjä" />
                     </children>
                 </VBox>
             </children>

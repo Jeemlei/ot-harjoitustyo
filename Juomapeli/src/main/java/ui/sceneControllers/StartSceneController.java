@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import juomapeli.GameDomain;
 import ui.JuomapeliUI;
 
 /**
@@ -14,9 +15,14 @@ import ui.JuomapeliUI;
  * @author Eemeli
  */
 public class StartSceneController implements Initializable {
-    
+
+    private GameDomain game;
     private JuomapeliUI application;
-    
+
+    public void setGameDomain(GameDomain gameDomain) {
+        this.game = gameDomain;
+    }
+
     public void setApplication(JuomapeliUI application) {
         this.application = application;
     }
@@ -47,12 +53,41 @@ public class StartSceneController implements Initializable {
 
     @FXML
     private Label player8;
-    
+
     @FXML
     private void addPlayer(ActionEvent event) {
-        
+        String playerName = this.playerTextField.getText();
+        this.game.addPlayer(playerName);
+        int playerNo = this.game.getPlayerCount();
+        switch (playerNo) {
+            case 1:
+                this.player1.setText(playerName);
+                break;
+            case 2:
+                this.player2.setText(playerName);
+                break;
+            case 3:
+                this.player3.setText(playerName);
+                break;
+            case 4:
+                this.player4.setText(playerName);
+                break;
+            case 5:
+                this.player5.setText(playerName);
+                break;
+            case 6:
+                this.player6.setText(playerName);
+                break;
+            case 7:
+                this.player7.setText(playerName);
+                break;
+            case 8:
+                this.player8.setText(playerName);
+                break;
+        }
+        this.playerTextField.setText("");
     }
-    
+
     @FXML
     private void startGame(ActionEvent event) {
         this.application.setGameScene();
