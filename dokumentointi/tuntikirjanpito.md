@@ -9,3 +9,4 @@
 |       | 1    | Checkstyle yms. konfigurointia |
 | 30.3. | 2,5  | JavaFX ja FXML pystytys |
 |       | 1    | Aloitusnäytön ulkoasu ja siirtymä pelinäkymään |
+|       | 1    | Ominaisuus: pelaajien lisääminen |
