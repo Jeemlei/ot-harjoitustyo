@@ -31,6 +31,9 @@ public class StartSceneController implements Initializable {
     private TextField playerTextField;
 
     @FXML
+    private Label warningLabel;
+
+    @FXML
     private Label player1;
 
     @FXML
@@ -57,35 +60,39 @@ public class StartSceneController implements Initializable {
     @FXML
     private void addPlayer(ActionEvent event) {
         String playerName = this.playerTextField.getText();
-        this.game.addPlayer(playerName);
-        int playerNo = this.game.getPlayerCount();
-        switch (playerNo) {
-            case 1:
-                this.player1.setText(playerName);
-                break;
-            case 2:
-                this.player2.setText(playerName);
-                break;
-            case 3:
-                this.player3.setText(playerName);
-                break;
-            case 4:
-                this.player4.setText(playerName);
-                break;
-            case 5:
-                this.player5.setText(playerName);
-                break;
-            case 6:
-                this.player6.setText(playerName);
-                break;
-            case 7:
-                this.player7.setText(playerName);
-                break;
-            case 8:
-                this.player8.setText(playerName);
-                break;
+        if (this.game.addPlayer(playerName)) {
+            this.warningLabel.setText("");
+            this.playerTextField.setText("");
+            int playerNo = this.game.getPlayerCount();
+            switch (playerNo) {
+                case 1:
+                    this.player1.setText(playerName);
+                    break;
+                case 2:
+                    this.player2.setText(playerName);
+                    break;
+                case 3:
+                    this.player3.setText(playerName);
+                    break;
+                case 4:
+                    this.player4.setText(playerName);
+                    break;
+                case 5:
+                    this.player5.setText(playerName);
+                    break;
+                case 6:
+                    this.player6.setText(playerName);
+                    break;
+                case 7:
+                    this.player7.setText(playerName);
+                    break;
+                case 8:
+                    this.player8.setText(playerName);
+                    break;
+            }
+        } else {
+            this.warningLabel.setText("Pelaajan lisääminen epäonnistui!");
         }
-        this.playerTextField.setText("");
     }
 
     @FXML
