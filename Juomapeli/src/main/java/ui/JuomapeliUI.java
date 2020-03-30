@@ -29,7 +29,7 @@ public class JuomapeliUI extends Application {
         Parent gamePane = gameSceneLoader.load();
         GameSceneController gameSceneController = gameSceneLoader.getController();
         gameSceneController.setApplication(this);
-        this.startScene = new Scene(gamePane);
+        this.gameScene = new Scene(gamePane);
     }
 
     @Override
