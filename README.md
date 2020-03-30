@@ -2,27 +2,11 @@
 
 *Repositorio sisältää kurssin [ohjelmistotekniikka kevät 2020](https://github.com/mluukkai/ohjelmistotekniikka-kevat-2020) viikottaiset tehtävät sekä harjoitustyön ja siihen liittyvät dokumentit.*
 
-## Tehtävät
+## Juomapeli
 
-### 1. viikko
+Peli on fyysiseen korttipeliin pohjautuva juomapeli 3-8 pelaajalle.
 
-[komentorivi.txt](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
-
-[gitlog.txt](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
-
-### 2. viikko
-
-[Maksukortti](https://github.com/Jeemlei/ot-harjoitustyo/tree/master/laskarit/viikko2/Maksukortti)
-
-[Unicafe](https://github.com/Jeemlei/ot-harjoitustyo/tree/master/laskarit/viikko2/Unicafe)
-
-[testikattavuus.PNG](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/laskarit/viikko2/testikattavuus.PNG)
-
-### 3. viikko
-
-[monopoli_uml.jpg](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/laskarit/viikko3/monopoli_uml.jpg)
-
-## Harjoitustyö
+### Dokumentaatio
 
 [Vaatimusmäärittely](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
 
