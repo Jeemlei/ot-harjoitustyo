@@ -12,6 +12,16 @@ Peli on fyysiseen korttipeliin pohjautuva juomapeli 3-8 pelaajalle.
 
 [Työaikakirjanpito](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentointi/tuntikirjanpito.md)
 
+## Toteutetut ominaisuudet
+
+- Logiikka pelaajien lisäämiseen
+  - Pelaajan nimen täytyy sisältää vähintään yksi merkki
+  - Saman nimisen pelaajan voi lisätä vain kerran peliin
+  - Peliin voi lisätä maksimissaan 8 pelaajaa
+- Aloitusnäkymä JavaFX:llä
+  - Aloita peli -nappi ei toimi, jos pelissä ei ole vielä tarpeeksi pelaajia
+  - Aloita peli -nappi vaihtaa ikkunan pelinäkymään, joka ei vielä sisällä mitään
+
 ## Komentorivitoiminnot
 
 ### Kääntäminen ja suoritus
