@@ -15,6 +15,7 @@ Peli on fyysiseen korttipeliin pohjautuva juomapeli 3-8 pelaajalle.
 ## Toteutetut ominaisuudet
 
 - Logiikka pelaajien lisäämiseen
+- JUnit testit logiikalle
   - Pelaajan nimen täytyy sisältää vähintään yksi merkki
   - Saman nimisen pelaajan voi lisätä vain kerran peliin
   - Peliin voi lisätä maksimissaan 8 pelaajaa
