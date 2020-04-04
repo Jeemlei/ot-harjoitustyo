@@ -1,4 +1,4 @@
-package juomapeli;
+package ui;
 
 import ui.JuomapeliUI;
 
