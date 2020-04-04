@@ -1,4 +1,4 @@
-package ui.sceneControllers;
+package ui.controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
