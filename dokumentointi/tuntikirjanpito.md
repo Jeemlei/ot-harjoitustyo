@@ -12,4 +12,5 @@
 |       | 1    | Ominaisuus: pelaajien lisääminen |
 |       | 1    | Ensimmäiset testit |
 | 4.4.  | 0,5  | Testikattavuus- ja checkstyleraportin rajaus |
-| yht.  | 14   | |
+|       | 0,5  | Muutos aloitusnäkymän elementtien käsittelyyn |
+| yht.  | 14,5 | |
