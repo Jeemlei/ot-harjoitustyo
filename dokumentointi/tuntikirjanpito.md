@@ -13,4 +13,4 @@
 |       | 1    | Ensimmäiset testit |
 | 4.4.  | 0,5  | Testikattavuus- ja checkstyleraportin rajaus |
 |       | 0,5  | Muutos aloitusnäkymän elementtien käsittelyyn |
-| yht.  | 14   | |
+| yht.  | 14,5 | |
