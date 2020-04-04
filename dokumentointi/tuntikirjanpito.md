@@ -11,5 +11,5 @@
 |       | 1,5   | Aloitusnäytön ulkoasu ja siirtymä pelinäkymään |
 |       | 1     | Ominaisuus: pelaajien lisääminen |
 |       | 1     | Ensimmäiset testit |
-|       | 0,25  | Testikattavuusraportin rajaus |
+| 4.4.  | 0,25  | Testikattavuusraportin rajaus |
 | yht.  | 13,75 | |
