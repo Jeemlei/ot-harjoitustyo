@@ -57,16 +57,39 @@ public class StartSceneController implements Initializable {
     @FXML
     private Label player8;
 
-    private Label[] playerLabels;
-
     @FXML
     private void addPlayer(ActionEvent event) {
         String playerName = this.playerTextField.getText();
         if (this.game.addPlayer(playerName)) {
             this.warningLabel.setText("");
             this.playerTextField.setText("");
-            int playerNo = this.game.getPlayerCount() - 1;
-            this.playerLabels[playerNo].setText(playerName);
+            int playerNo = this.game.getPlayerCount();
+            switch (playerNo) {
+                case 1:
+                    this.player1.setText(playerName);
+                    break;
+                case 2:
+                    this.player2.setText(playerName);
+                    break;
+                case 3:
+                    this.player3.setText(playerName);
+                    break;
+                case 4:
+                    this.player4.setText(playerName);
+                    break;
+                case 5:
+                    this.player5.setText(playerName);
+                    break;
+                case 6:
+                    this.player6.setText(playerName);
+                    break;
+                case 7:
+                    this.player7.setText(playerName);
+                    break;
+                case 8:
+                    this.player8.setText(playerName);
+                    break;
+            }
         } else {
             this.warningLabel.setText("Pelaajan lisääminen epäonnistui!");
         }
@@ -84,8 +107,6 @@ public class StartSceneController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        Label[] labels = {this.player1, this.player2, this.player3, this.player4,
-            this.player5, this.player6, this.player7, this.player8};
-        this.playerLabels = labels;
+
     }
 }
