@@ -25,12 +25,12 @@ Kolmannessa näkymässä pelaaja vahvistaa haluavansa luovuttaa, minkä jälkeen
 
 ### Ennen pelin alkua
 
-- Pelaajan lisääminen
+- Pelaajan lisääminen **TEHTY**
   - Pelaajanimen tulee olla uniikki jokaisella kyseisen kierroksen pelaajalla ja sisältää vähintään 1 merkki
   - Pelaajia voi lisätä korkeintaan 8
 - Pelaajan poistaminen
   - Pelaajan voi vielä poistaa ennen pelin aloittamista
-- Pelin aloittaminen
+- Pelin aloittaminen **TEHTY**
   - Pelissä täytyy olla vähintään 3 pelaajaa lisättynä
 
 ### Pelin aikana
