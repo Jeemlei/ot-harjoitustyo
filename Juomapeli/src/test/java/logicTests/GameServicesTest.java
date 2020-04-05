@@ -1,6 +1,6 @@
 package logicTests;
 
-import juomapeli.GameDomain;
+import juomapeli.GameServices;
 import static org.hamcrest.CoreMatchers.*;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -13,11 +13,11 @@ import static org.junit.Assert.*;
  *
  * @author Eemeli
  */
-public class GameDomainTest {
+public class GameServicesTest {
 
-    GameDomain game;
+    GameServices game;
 
-    public GameDomainTest() {
+    public GameServicesTest() {
     }
 
     @BeforeClass
@@ -30,7 +30,7 @@ public class GameDomainTest {
 
     @Before
     public void setUp() {
-        this.game = new GameDomain();
+        this.game = new GameServices();
     }
 
     @After

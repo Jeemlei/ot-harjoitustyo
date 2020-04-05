@@ -6,7 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import juomapeli.GameDomain;
+import juomapeli.GameServices;
 import ui.JuomapeliUI;
 
 /**
@@ -16,11 +16,11 @@ import ui.JuomapeliUI;
  */
 public class StartSceneController implements Initializable {
 
-    private GameDomain game;
+    private GameServices game;
     private JuomapeliUI application;
 
-    public void setGameDomain(GameDomain gameDomain) {
-        this.game = gameDomain;
+    public void setGameDomain(GameServices gameServices) {
+        this.game = gameServices;
     }
 
     public void setApplication(JuomapeliUI application) {

@@ -5,7 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import juomapeli.GameDomain;
+import juomapeli.GameServices;
 import ui.controllers.StartSceneController;
 import ui.controllers.GameSceneController;
 import ui.controllers.ForfeitSceneController;
@@ -17,14 +17,14 @@ import ui.controllers.ForfeitSceneController;
 public class JuomapeliUI extends Application {
 
     private Stage stage;
-    private GameDomain game;
+    private GameServices game;
     private Scene startScene;
     private Scene gameScene;
     private Scene forfeitScene;
 
     @Override
     public void init() throws Exception {
-        this.game = new GameDomain();
+        this.game = new GameServices();
         
         FXMLLoader startSceneLoader = new FXMLLoader(getClass().getResource("/fxml/StartScene.fxml"));
         Parent startPane = startSceneLoader.load();

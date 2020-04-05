@@ -6,11 +6,11 @@ import java.util.HashSet;
  *
  * @author Eemeli
  */
-public class GameDomain {
+public class GameServices {
 
     private HashSet<String> players;
 
-    public GameDomain() {
+    public GameServices() {
         this.players = new HashSet<>();
     }
 
