@@ -1,13 +1,14 @@
 package ui;
 
-import ui.controllers.GameSceneController;
-import ui.controllers.StartSceneController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import juomapeli.GameDomain;
+import ui.controllers.StartSceneController;
+import ui.controllers.GameSceneController;
+import ui.controllers.ForfeitSceneController;
 
 /**
  *
@@ -19,6 +20,7 @@ public class JuomapeliUI extends Application {
     private GameDomain game;
     private Scene startScene;
     private Scene gameScene;
+    private Scene forfeitScene;
 
     @Override
     public void init() throws Exception {
@@ -37,6 +39,13 @@ public class JuomapeliUI extends Application {
         gameSceneController.setGameDomain(this.game);
         gameSceneController.setApplication(this);
         this.gameScene = new Scene(gamePane);
+
+        FXMLLoader forfeitSceneLoader = new FXMLLoader(getClass().getResource("/fxml/ForfeitScene.fxml"));
+        Parent forfeitPane = forfeitSceneLoader.load();
+        ForfeitSceneController forfeitSceneController = forfeitSceneLoader.getController();
+        forfeitSceneController.setGameDomain(this.game);
+        forfeitSceneController.setApplication(this);
+        this.forfeitScene = new Scene(forfeitPane);
     }
 
     @Override
@@ -54,6 +63,10 @@ public class JuomapeliUI extends Application {
 
     public void setGameScene() {
         this.stage.setScene(this.gameScene);
+    }
+    
+    public void setForfeitScene() {
+        this.stage.setScene(this.forfeitScene);
     }
 
     public static void main(String[] args) {
