@@ -28,12 +28,16 @@ Kolmannessa näkymässä pelaaja vahvistaa haluavansa luovuttaa, minkä jälkeen
 - Pelaajan lisääminen
   - Pelaajanimen tulee olla uniikki jokaisella kyseisen kierroksen pelaajalla ja sisältää vähintään 1 merkki
   - Pelaajia voi lisätä korkeintaan 8
+- Pelaajan poistaminen
+  - Pelaajan voi vielä poistaa ennen pelin aloittamista
 - Pelin aloittaminen
   - Pelissä täytyy olla vähintään 3 pelaajaa lisättynä
 
 ### Pelin aikana
 
 - Seuraavan kortin kääntäminen
+  - Vuoro siirtyy seuraavalle pelaajalle
+  - Seuraavan kortin tiedot ilmestyvät näkyviin
 - Nopan heittäminen
 - Pelaajan luovuttaminen
   - Tupla varmistus ennen pelaajan poistoa
