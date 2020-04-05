@@ -54,4 +54,14 @@ Testikattavuusraportti luodaan komennolla
 mvn jacoco:report
 ```
 
-Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto _target/site/jacoco/index.html_
+Kattavuusraporttia voi tarkastella avaamalla selaimella tiedoston _target/site/jacoco/index.html_
+
+### Checkstyle
+
+Tiedoston [checkstyle.xml](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/checkstyle.xml) määrittelemät tarkistukset suoritetaan komennolla
+
+```
+ mvn jxr:jxr checkstyle:checkstyle
+```
+
+Virheraporttia voi tarkastella avaamalla selaimella tiedoston _target/site/checkstyle.html_
