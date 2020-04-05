@@ -13,4 +13,5 @@
 |       | 1    | Ensimmäiset testit |
 | 4.4.  | 0,5  | Testikattavuus- ja checkstyleraportin rajaus |
 |       | 0,5  | Muutos aloitusnäkymän elementtien käsittelyyn |
-| yht.  | 14,5 | |
+| 5.4.  | 0,5  | Suunnittelua ja dokumenttien päivittämistä |
+| yht.  | 15   | |
