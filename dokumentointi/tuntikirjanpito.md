@@ -14,4 +14,5 @@
 | 4.4.  | 0,5  | Testikattavuus- ja checkstyleraportin rajaus |
 |       | 0,5  | Muutos aloitusnäkymän elementtien käsittelyyn |
 | 5.4.  | 0,5  | Suunnittelua ja dokumenttien päivittämistä |
-| yht.  | 15   | |
+|       | 1,5  | Pelinäkymän rakentamista |
+| yht.  | 16,5 | |
