@@ -1,6 +1,6 @@
 package domain;
 
-import java.util.HashSet;
+import java.util.ArrayList;
 
 /**
  *
@@ -8,23 +8,37 @@ import java.util.HashSet;
  */
 public class GameServices {
 
-    private HashSet<String> players;
+    private ArrayList<String> players;
 
     public GameServices() {
-        this.players = new HashSet<>();
+        this.players = new ArrayList<>();
     }
 
-    public boolean addPlayer(String playerName) {
-        if (this.players.contains(playerName)
-                || playerName.length() < 1
-                || this.players.size() >= 8) {
-            return false;
+    public String addPlayer(String playerName) {
+        if (this.players.contains(playerName)) {
+            return "Pelaaja on jo lisätty!";
+        } else if (playerName.length() < 1) {
+            return "Kirjoita pelaajan nimi!";
+        } else if (this.players.size() >= 8) {
+            return "Peli on täynnä!";
         }
         this.players.add(playerName);
-        return true;
+        return "";
     }
 
     public int getPlayerCount() {
         return this.players.size();
+    }
+    
+    public ArrayList<String> getPlayers() {
+        return this.players;
+    }
+
+    public String removePlayer(int playerNo) {
+        if (playerNo >= this.players.size()) {
+            return "Pelaajan poistaminen epäonnistui!";
+        }
+        this.players.remove(playerNo);
+        return "";
     }
 }

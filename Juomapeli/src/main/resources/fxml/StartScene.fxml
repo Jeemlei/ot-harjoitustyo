@@ -14,24 +14,64 @@
     </stylesheets>
     <children>
         <TextField fx:id="playerTextField" layoutX="50.0" layoutY="40.0" prefHeight="25.0" prefWidth="174.0" />
-        <Button fx:id="addPlayerButton" layoutX="259.0" layoutY="40.0" onAction="#addPlayer" text="Lisää pelaaja" />
+        <Button fx:id="addPlayerButton" defaultButton="true" layoutX="267.0" layoutY="40.0" onAction="#addPlayer" text="Lisää pelaaja" />
         <Label fx:id="warningLabel" layoutX="50.0" layoutY="65.0" prefHeight="17.0" prefWidth="184.0" textFill="RED" />
         <HBox layoutX="50.0" layoutY="100.0" prefHeight="200.0" prefWidth="300.0">
             <children>
                 <VBox prefHeight="200.0" prefWidth="150.0">
                     <children>
-                        <Label fx:id="player1" alignment="CENTER" prefHeight="50.0" prefWidth="150.0" text="tyhjä" />
-                        <Label fx:id="player2" alignment="CENTER" prefHeight="50.0" prefWidth="150.0" text="tyhjä" />
-                        <Label fx:id="player3" alignment="CENTER" prefHeight="50.0" prefWidth="150.0" text="tyhjä" />
-                        <Label fx:id="player4" alignment="CENTER" prefHeight="50.0" prefWidth="150.0" text="tyhjä" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="player1" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Button fx:id="b0" onAction="#removePlayer" text="X" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="player2" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Button fx:id="b1" onAction="#removePlayer" text="X" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="player3" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Button fx:id="b2" onAction="#removePlayer" text="X" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="player4" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Button fx:id="b3" onAction="#removePlayer" text="X" />
+                            </children>
+                        </HBox>
                     </children>
                 </VBox>
                 <VBox prefHeight="200.0" prefWidth="150.0">
                     <children>
-                        <Label fx:id="player5" alignment="CENTER" prefHeight="50.0" prefWidth="150.0" text="tyhjä" />
-                        <Label fx:id="player6" alignment="CENTER" prefHeight="50.0" prefWidth="150.0" text="tyhjä" />
-                        <Label fx:id="player7" alignment="CENTER" prefHeight="50.0" prefWidth="150.0" text="tyhjä" />
-                        <Label fx:id="player8" alignment="CENTER" prefHeight="50.0" prefWidth="150.0" text="tyhjä" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="player5" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Button fx:id="b4" onAction="#removePlayer" text="X" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="player6" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Button fx:id="b5" onAction="#removePlayer" text="X" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="player7" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Button fx:id="b6" onAction="#removePlayer" text="X" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="player8" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Button fx:id="b7" onAction="#removePlayer" text="X" />
+                            </children>
+                        </HBox>
                     </children>
                 </VBox>
             </children>
