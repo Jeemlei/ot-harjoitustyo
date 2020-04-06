@@ -25,21 +25,29 @@ Kolmannessa näkymässä pelaaja vahvistaa haluavansa luovuttaa, minkä jälkeen
 
 ### Ennen pelin alkua
 
-- Pelaajan lisääminen **TEHTY**
+- [x] Pelaajan lisääminen **TEHTY**
   - Pelaajanimen tulee olla uniikki jokaisella kyseisen kierroksen pelaajalla ja sisältää vähintään 1 merkki
   - Pelaajia voi lisätä korkeintaan 8
-- Pelaajan poistaminen **TEHTY**
+- [x] Pelaajan poistaminen **TEHTY**
   - Pelaajan voi vielä poistaa ennen pelin aloittamista
-- Pelin aloittaminen **TEHTY**
+- [x] Pelin aloittaminen **TEHTY**
   - Pelissä täytyy olla vähintään 3 pelaajaa lisättynä
+
+### Pelin alkaessa
+
+- [ ] Ohjelma hakee kortit muistista
+  - Korttien tiedot on tallennettuna tiedostoon tai tietokantaan
+- [ ] Ohjelma luo korteista pakan
+  - Kortit laitetaan pakkaan satunnaiseen järjestykseen
+  - Pakan koko riippuu pelaajien lukumäärästä
 
 ### Pelin aikana
 
-- Seuraavan kortin kääntäminen
+- [ ] Seuraavan kortin kääntäminen
   - Vuoro siirtyy seuraavalle pelaajalle
   - Seuraavan kortin tiedot ilmestyvät näkyviin
-- Nopan heittäminen
-- Pelaajan luovuttaminen
+- [ ] Nopan heittäminen
+- [ ] Pelaajan luovuttaminen
   - Tupla varmistus ennen pelaajan poistoa
 
 ## Jatkokehitysideoita
