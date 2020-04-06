@@ -15,4 +15,5 @@
 |       | 0,5  | Muutos aloitusnäkymän elementtien käsittelyyn |
 | 5.4.  | 0,5  | Suunnittelua ja dokumenttien päivittämistä |
 |       | 1,5  | Pelinäkymän rakentamista |
-| yht.  | 16,5 | |
+| 6.4.  | 2    | Aloitusnäkymän viimeistely & logiikka |
+| yht.  | 18,5 | |
