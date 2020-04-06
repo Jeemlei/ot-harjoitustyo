@@ -16,4 +16,5 @@
 | 5.4.  | 0,5  | Suunnittelua ja dokumenttien päivittämistä |
 |       | 1,5  | Pelinäkymän rakentamista |
 | 6.4.  | 2    | Aloitusnäkymän viimeistely & logiikka |
-| yht.  | 18,5 | |
+|       | 0,5  | Loput testit aloitusnäkymän logiikalle |
+| yht.  | 19   | |
