@@ -3,7 +3,7 @@ package ui.controllers;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
-import juomapeli.GameServices;
+import domain.GameServices;
 import ui.JuomapeliUI;
 
 /**

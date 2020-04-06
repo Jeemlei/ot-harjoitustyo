@@ -1,4 +1,4 @@
-package juomapeli;
+package domain;
 
 import java.util.HashSet;
 

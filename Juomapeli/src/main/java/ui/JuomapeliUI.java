@@ -5,7 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import juomapeli.GameServices;
+import domain.GameServices;
 import ui.controllers.StartSceneController;
 import ui.controllers.GameSceneController;
 import ui.controllers.ForfeitSceneController;

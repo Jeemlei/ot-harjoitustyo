@@ -1,6 +1,6 @@
 package logicTests;
 
-import juomapeli.GameServices;
+import domain.GameServices;
 import static org.hamcrest.CoreMatchers.*;
 import org.junit.After;
 import org.junit.AfterClass;

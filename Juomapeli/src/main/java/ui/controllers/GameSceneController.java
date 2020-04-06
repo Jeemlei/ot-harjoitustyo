@@ -6,7 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import juomapeli.GameServices;
+import domain.GameServices;
 import ui.JuomapeliUI;
 
 /**

@@ -13,9 +13,9 @@
         <URL value="@/styles/Styles.css" />
     </stylesheets>
     <children>
-        <TextField fx:id="playerTextField" layoutX="50.0" layoutY="40.0" prefHeight="25.0" prefWidth="150.0" />
+        <TextField fx:id="playerTextField" layoutX="50.0" layoutY="40.0" prefHeight="25.0" prefWidth="174.0" />
         <Button fx:id="addPlayerButton" layoutX="259.0" layoutY="40.0" onAction="#addPlayer" text="Lisää pelaaja" />
-        <Label fx:id="warningLabel" layoutX="100.0" layoutY="65.0" prefHeight="9.0" prefWidth="200.0" textFill="RED" />
+        <Label fx:id="warningLabel" layoutX="50.0" layoutY="65.0" prefHeight="17.0" prefWidth="184.0" textFill="RED" />
         <HBox layoutX="50.0" layoutY="100.0" prefHeight="200.0" prefWidth="300.0">
             <children>
                 <VBox prefHeight="200.0" prefWidth="150.0">
