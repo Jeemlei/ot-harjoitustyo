@@ -41,7 +41,7 @@ public class GameSceneController implements Initializable {
 
     @FXML
     private void forfeit(ActionEvent event) {
-        
+        this.application.setForfeitScene();
     }
 
     @FXML

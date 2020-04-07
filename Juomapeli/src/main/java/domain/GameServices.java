@@ -15,6 +15,7 @@ public class GameServices {
     }
 
     public String addPlayer(String playerName) {
+        playerName = playerName.trim();
         if (this.players.contains(playerName)) {
             return "Pelaaja on jo lisätty!";
         } else if (playerName.length() < 1) {
