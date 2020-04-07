@@ -27,19 +27,19 @@ public class GameServices {
         return "";
     }
 
-    public int getPlayerCount() {
-        return this.players.size();
-    }
-    
-    public ArrayList<String> getPlayers() {
-        return this.players;
-    }
-
     public String removePlayer(int playerNo) {
         if (playerNo >= this.players.size()) {
             return "Pelaajan poistaminen epäonnistui!";
         }
         this.players.remove(playerNo);
         return "";
+    }
+
+    public int getPlayerCount() {
+        return this.players.size();
+    }
+    
+    public ArrayList<String> getPlayers() {
+        return this.players;
     }
 }
