@@ -11,6 +11,7 @@
 |       | 1,5  | Aloitusnäytön ulkoasu ja siirtymä pelinäkymään |
 |       | 1    | Ominaisuus: pelaajien lisääminen |
 |       | 1    | Ensimmäiset testit |
+| 31.3. | 0,5  | Komentorivitoimintojen testaus ja README.md päivitys |
 | 4.4.  | 0,5  | Testikattavuus- ja checkstyleraportin rajaus |
 |       | 0,5  | Muutos aloitusnäkymän elementtien käsittelyyn |
 | 5.4.  | 0,5  | Suunnittelua ja dokumenttien päivittämistä |
