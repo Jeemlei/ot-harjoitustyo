@@ -19,4 +19,4 @@
 | 6.4.  | 2    | Aloitusnäkymän viimeistely & logiikka |
 |       | 0,5  | Loput testit aloitusnäkymän logiikalle |
 | 7.4.  | 3    | Pientä korjailua ja vk4 dokumentointia |
-| yht.  | 22   | |
+| yht.  | 22,5 | |
