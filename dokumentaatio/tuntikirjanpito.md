@@ -17,4 +17,5 @@
 |       | 1,5  | Pelinäkymän rakentamista |
 | 6.4.  | 2    | Aloitusnäkymän viimeistely & logiikka |
 |       | 0,5  | Loput testit aloitusnäkymän logiikalle |
-| yht.  | 19   | |
+| 7.4.  | 3    | Pientä korjailua ja vk4 dokumentointia |
+| yht.  | 22   | |
