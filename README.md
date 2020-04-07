@@ -18,7 +18,7 @@ Peli on fyysiseen korttipeliin pohjautuva juomapeli 3-8 pelaajalle.
 
 Luodaan jar-tiedosto ja käynnistetään ohjelma komennolla
 ```
-mvn compile exec:java -Dexec.mainClass=juomapeli.Main
+mvn compile exec:java -Dexec.mainClass=ui.Main
 ```
 
 Pelkkä jar-tiedoston generointi onnistuu komennolla
