@@ -8,9 +8,9 @@ Peli on fyysiseen korttipeliin pohjautuva juomapeli 3-8 pelaajalle.
 
 ## Dokumentaatio
 
-[Vaatimusmäärittely](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentointi/vaatimusmaarittely.md)
+[Vaatimusmäärittely](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
-[Työaikakirjanpito](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentointi/tuntikirjanpito.md)
+[Työaikakirjanpito](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 ## Komentorivitoiminnot
 
