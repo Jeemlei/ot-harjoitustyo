@@ -20,4 +20,4 @@
 |       | 0,5  | Loput testit aloitusnäkymän logiikalle |
 | 7.4.  | 3    | Pientä korjailua ja vk4 dokumentointia |
 | 12.4. | 4    | Jumalatonta säätöä resurssitiedoston sisällyttämiseksi .jar tiedostoon |
-| yht.  | 22,5 | |
+| yht.  | 26,5 | |
