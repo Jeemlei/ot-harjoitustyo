@@ -11,9 +11,9 @@
         <URL value="@/styles/Styles.css" />
     </stylesheets>
    <children>
-      <Label layoutX="50.0" layoutY="50.0" prefHeight="17.0" prefWidth="59.0" text="Vuorossa:" />
-      <Label fx:id="playerName" layoutX="120.0" layoutY="50.0" prefHeight="17.0" prefWidth="160.0" text="[pelaajannimi]" />
-      <Button fx:id="forfeitButton" layoutX="291.0" layoutY="46.0" onAction="#forfeit" text="Luovuta" />
+      <Label layoutX="50.0" layoutY="50.0" prefHeight="25.0" prefWidth="70.0" text="Vuorossa:" />
+      <Label fx:id="playerName" layoutX="120.0" layoutY="50.0" prefHeight="25.0" prefWidth="160.0" text="[pelaajannimi]" />
+      <Button fx:id="forfeitButton" layoutX="291.0" layoutY="50.0" onAction="#forfeit" text="Luovuta" />
       <VBox layoutX="50.0" layoutY="100.0" prefHeight="200.0" prefWidth="300.0">
          <children>
             <Label fx:id="cardName" prefHeight="25.0" prefWidth="300.0" text="[kortinnimi]" />
