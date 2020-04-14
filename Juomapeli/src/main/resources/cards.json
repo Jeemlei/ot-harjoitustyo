@@ -1,0 +1,40 @@
+{
+    "basicCards":[
+        {
+            "name":"Siideripissis",
+            "description":"Ota yksi (1) huikka.",
+            "max4plrs":[5,0,0,0,0],
+            "max8plrs":[7,0,0,0,0]
+        },
+        {
+            "name":"Kaljamaisteri",
+            "description":"Juo kaksi (2) huikkaa.",
+            "max4plrs":[4,0,0,0,0],
+            "max8plrs":[6,0,0,0,0]
+        },
+        {
+            "name":"Alkoholisti",
+            "description":"Ota kolme (3) huikkaa.",
+            "max4plrs":[3,0,0,0,0],
+            "max8plrs":[4,0,0,0,0]
+        },
+        {
+            "name":"Juomanjakaja",
+            "description":"Jaa neljä (4) huikkaa.",
+            "max4plrs":[3,0,0,0,0],
+            "max8plrs":[5,0,0,0,0]
+        },
+        {
+            "name":"Malja maksalle",
+            "description":"Jaa viisi (5) huikkaa.",
+            "max4plrs":[2,0,0,0,0],
+            "max8plrs":[3,0,0,0,0]
+        },
+        {
+            "name":"Päivi Räsänen",
+            "description":"Suututit Jumalan. Juo kymmenen (10) huikkaa.",
+            "max4plrs":[1,0,0,0,0],
+            "max8plrs":[1,0,0,0,0]
+        }
+    ]
+}
