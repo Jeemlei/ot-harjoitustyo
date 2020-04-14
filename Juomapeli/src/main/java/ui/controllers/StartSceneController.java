@@ -116,7 +116,8 @@ public class StartSceneController implements Initializable {
     @FXML
     private void startGame(ActionEvent event) {
         if (this.game.getPlayerCount() >= 3) {
-            this.application.setGameScene();
+            this.game.initGame();
+            this.application.startNewGame();
         } else {
             this.update("Liian vähän pelaajia!");
         }

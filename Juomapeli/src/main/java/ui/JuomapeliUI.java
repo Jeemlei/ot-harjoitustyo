@@ -20,6 +20,7 @@ public class JuomapeliUI extends Application {
     private GameServices game;
     private Scene startScene;
     private Scene gameScene;
+    private GameSceneController gameSceneController;
     private Scene forfeitScene;
 
     @Override
@@ -35,9 +36,9 @@ public class JuomapeliUI extends Application {
 
         FXMLLoader gameSceneLoader = new FXMLLoader(getClass().getResource("/fxml/GameScene.fxml"));
         Parent gamePane = gameSceneLoader.load();
-        GameSceneController gameSceneController = gameSceneLoader.getController();
-        gameSceneController.setGameDomain(this.game);
-        gameSceneController.setApplication(this);
+        this.gameSceneController = gameSceneLoader.getController();
+        this.gameSceneController.setGameDomain(this.game);
+        this.gameSceneController.setApplication(this);
         this.gameScene = new Scene(gamePane);
 
         FXMLLoader forfeitSceneLoader = new FXMLLoader(getClass().getResource("/fxml/ForfeitScene.fxml"));
@@ -55,6 +56,11 @@ public class JuomapeliUI extends Application {
         stage.setTitle("Juomapeli");
         this.setStartScene();
         stage.show();
+    }
+    
+    public void startNewGame() {
+        this.setGameScene();
+        this.gameSceneController.start();
     }
 
     public void setStartScene() {

@@ -1,5 +1,7 @@
 package domain;
 
+import domain.deck.Card;
+import domain.deck.Deck;
 import java.util.ArrayList;
 
 /**
@@ -9,6 +11,7 @@ import java.util.ArrayList;
 public class GameServices {
 
     private ArrayList<String> players;
+    private Deck deck;
 
     public GameServices() {
         this.players = new ArrayList<>();
@@ -33,6 +36,15 @@ public class GameServices {
         }
         this.players.remove(playerNo);
         return "";
+    }
+    
+    public void initGame() {
+        this.deck = new Deck(this.getPlayerCount());
+        this.deck.generateNewDeck();
+    }
+    
+    public Card nextCard() {
+        return this.deck.nextCard();
     }
 
     public int getPlayerCount() {
