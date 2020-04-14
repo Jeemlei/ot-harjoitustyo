@@ -22,4 +22,5 @@
 | 12.4. | 4    | Jumalatonta säätöä resurssitiedoston sisällyttämiseksi .jar tiedostoon |
 |       | 2    | Lisää säätämistä dao:n kyhäämisessä |
 | 14.4. | 3,5  | Korttipakan ja sekoituslogiikan toteutusta. cards.json muotoilua |
+|       | 0,5  | Pientä bugien fixailua |
 | yht.  | 32   | |
