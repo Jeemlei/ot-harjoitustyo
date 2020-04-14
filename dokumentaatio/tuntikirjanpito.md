@@ -23,4 +23,4 @@
 |       | 2    | Lisää säätämistä dao:n kyhäämisessä |
 | 14.4. | 3,5  | Korttipakan ja sekoituslogiikan toteutusta. cards.json muotoilua |
 |       | 0,5  | Pientä bugien fixailua |
-| yht.  | 32   | |
+| yht.  | 32,5 | |
