@@ -23,6 +23,8 @@ Kolmannessa näkymässä pelaaja vahvistaa haluavansa luovuttaa, minkä jälkeen
 
 ## Perusversion tarjoama toiminnallisuus
 
+**Perusversion kaikki ominaisuudet toteutettu!**
+
 ### Ennen pelin alkua
 
 - [x] Pelaajan lisääminen **TEHTY**
