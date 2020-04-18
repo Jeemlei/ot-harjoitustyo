@@ -35,9 +35,9 @@ public class JSONCardsDao implements CardsDao {
         String line;
         while ((line = br.readLine()) != null) {
             sb.append(line);
-            sb.append("\n");
         }
 
+        stream.close();
         this.jsonFile = new JSONObject(sb.toString());
     }
 
