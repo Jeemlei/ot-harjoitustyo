@@ -24,4 +24,5 @@
 | 14.4.  | 3,5    | Korttipakan ja sekoituslogiikan toteutusta. cards.json muotoilua |
 |        | 0,5    | Pientä bugien fixailua |
 | 18.4.  | 0,5    | Vuoron seuranta ja vuorossa olevan pelaajan päivitys |
-|**yht.**| **33** | |
+| 19.4.  | 1      | Luovutusominaisuuden toteutus logiikassa sekä käyttöliittymässä |
+|**yht.**| **34** | |
