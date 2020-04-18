@@ -2,6 +2,7 @@ package domain;
 
 import domain.deck.Card;
 import domain.deck.Deck;
+import domain.deck.EndCard;
 import java.util.ArrayList;
 
 /**
@@ -39,33 +40,43 @@ public class GameServices {
         this.players.remove(playerNo);
         return "";
     }
-    
+
     public void initGame() {
         this.deck = new Deck(this.getPlayerCount());
         this.deck.generateNewDeck();
         this.cardInTurn = this.deck.nextCard();
     }
-    
+
     public void nextTurn() {
         this.turn++;
-        if (this.turn >= this.players.size()) {
+        if (this.turn >= this.getPlayerCount()) {
             this.turn = 0;
         }
         this.cardInTurn = this.deck.nextCard();
     }
 
+    public void forfeitPlayerInTurn() {
+        this.removePlayer(this.turn);
+        if (this.getPlayerCount() <= 1) {
+            this.deck.addCardOnTop(new EndCard());
+            this.nextTurn();
+        } else {
+            this.cardInTurn = this.deck.nextCard();
+        }
+    }
+
     public int getPlayerCount() {
         return this.players.size();
     }
-    
+
     public ArrayList<String> getPlayers() {
         return this.players;
     }
-    
+
     public Card getCardInTurn() {
         return this.cardInTurn;
     }
-    
+
     public String getPlayerInTurn() {
         return this.players.get(this.turn);
     }

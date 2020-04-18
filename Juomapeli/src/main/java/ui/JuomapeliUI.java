@@ -19,9 +19,11 @@ public class JuomapeliUI extends Application {
     private Stage stage;
     private GameServices game;
     private Scene startScene;
+    private StartSceneController startSceneController;
     private Scene gameScene;
     private GameSceneController gameSceneController;
     private Scene forfeitScene;
+    private ForfeitSceneController forfeitSceneController;
 
     @Override
     public void init() throws Exception {
@@ -29,9 +31,9 @@ public class JuomapeliUI extends Application {
         
         FXMLLoader startSceneLoader = new FXMLLoader(getClass().getResource("/fxml/StartScene.fxml"));
         Parent startPane = startSceneLoader.load();
-        StartSceneController startSceneController = startSceneLoader.getController();
-        startSceneController.setGameDomain(this.game);
-        startSceneController.setApplication(this);
+        this.startSceneController = startSceneLoader.getController();
+        this.startSceneController.setGameDomain(this.game);
+        this.startSceneController.setApplication(this);
         this.startScene = new Scene(startPane);
 
         FXMLLoader gameSceneLoader = new FXMLLoader(getClass().getResource("/fxml/GameScene.fxml"));
@@ -43,9 +45,9 @@ public class JuomapeliUI extends Application {
 
         FXMLLoader forfeitSceneLoader = new FXMLLoader(getClass().getResource("/fxml/ForfeitScene.fxml"));
         Parent forfeitPane = forfeitSceneLoader.load();
-        ForfeitSceneController forfeitSceneController = forfeitSceneLoader.getController();
-        forfeitSceneController.setGameDomain(this.game);
-        forfeitSceneController.setApplication(this);
+        this.forfeitSceneController = forfeitSceneLoader.getController();
+        this.forfeitSceneController.setGameDomain(this.game);
+        this.forfeitSceneController.setApplication(this);
         this.forfeitScene = new Scene(forfeitPane);
     }
 
@@ -65,14 +67,17 @@ public class JuomapeliUI extends Application {
 
     public void setStartScene() {
         this.stage.setScene(this.startScene);
+        this.startSceneController.update("");
     }
 
     public void setGameScene() {
         this.stage.setScene(this.gameScene);
+        this.gameSceneController.update();
     }
     
     public void setForfeitScene() {
         this.stage.setScene(this.forfeitScene);
+        this.forfeitSceneController.updatePlayer();
     }
 
     public static void main(String[] args) {

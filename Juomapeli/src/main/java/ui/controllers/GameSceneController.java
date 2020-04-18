@@ -32,6 +32,11 @@ public class GameSceneController implements Initializable {
         this.updatePlayerInTurn();
         this.updateCardInfo();
     }
+    
+    public void update() {
+        this.updatePlayerInTurn();
+        this.updateCardInfo();
+    }
 
     @FXML
     private Label playerName;

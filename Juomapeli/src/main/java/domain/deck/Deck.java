@@ -57,7 +57,7 @@ public class Deck {
         this.deck.addLast(new EndCard());
     }
 
-    public void generateNewQuarters() {
+    private void generateNewQuarters() {
         this.pcsFirst = new ArrayList<>();
         this.pcsSecond = new ArrayList<>();
         this.pcsThird = new ArrayList<>();
@@ -89,6 +89,10 @@ public class Deck {
                     break;
             }
         }
+    }
+    
+    public void addCardOnTop(Card card) {
+        this.deck.addFirst(card);
     }
 
     public Card nextCard() {
