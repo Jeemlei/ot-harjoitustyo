@@ -64,7 +64,7 @@ public class GameSceneController implements Initializable {
 
     @FXML
     private void rollDice(ActionEvent event) {
-
+        this.diceDisplay.setText("" + this.game.rollDice(6));
     }
     
     private void updatePlayerInTurn() {

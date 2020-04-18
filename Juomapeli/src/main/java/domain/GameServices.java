@@ -4,6 +4,7 @@ import domain.deck.Card;
 import domain.deck.Deck;
 import domain.deck.EndCard;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  *
@@ -53,6 +54,10 @@ public class GameServices {
             this.turn = 0;
         }
         this.cardInTurn = this.deck.nextCard();
+    }
+    
+    public int rollDice(int faces) {
+        return new Random().nextInt(faces) + 1;
     }
 
     public void forfeitPlayerInTurn() {
