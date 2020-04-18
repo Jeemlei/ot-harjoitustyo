@@ -55,7 +55,7 @@ Kolmannessa näkymässä pelaaja vahvistaa haluavansa luovuttaa, minkä jälkeen
 Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. seuraavilla toiminnallisuuksilla
 
 - Eri korttien (46 uniikkia [korttia](https://drive.google.com/drive/folders/16hBqs6dDaSH-T-GKFYN9Hh7Yt22KrmyP?usp=sharing)) ominaisuuksiin liittyvän logiikan implementoinit
-  - Korttikategoriat
+  - Korttikategoriat (vaatii todennäköisesti suuria muutoksia käyttöliittymään)
   - Juomalaskurit pelaajille
   - Korttien kohdistaminen tiettyihin pelaajiin
   - Pelaajien hallussa olevien kyky- ja tiketti-korttien tarkastelu ja käyttäminen
