@@ -46,7 +46,7 @@ Kolmannessa näkymässä pelaaja vahvistaa haluavansa luovuttaa, minkä jälkeen
 - [x] Seuraavan kortin kääntäminen **TEHTY**
   - Vuoro siirtyy seuraavalle pelaajalle
   - Seuraavan kortin tiedot ilmestyvät näkyviin
-- [ ] Nopan heittäminen
+- [x] Nopan heittäminen **TEHTY**
 - [x] Pelaajan luovuttaminen **TEHTY**
   - Tupla varmistus ennen pelaajan poistoa
 
