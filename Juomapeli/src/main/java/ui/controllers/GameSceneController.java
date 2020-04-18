@@ -29,6 +29,7 @@ public class GameSceneController implements Initializable {
     }
 
     public void start() {
+        this.updatePlayerInTurn();
         this.updateCardInfo();
     }
 
@@ -50,7 +51,9 @@ public class GameSceneController implements Initializable {
     }
 
     @FXML
-    private void nextCard(ActionEvent event) {
+    private void nextTurn(ActionEvent event) {
+        this.game.nextTurn();
+        this.updatePlayerInTurn();
         this.updateCardInfo();
     }
 
@@ -58,9 +61,13 @@ public class GameSceneController implements Initializable {
     private void rollDice(ActionEvent event) {
 
     }
+    
+    private void updatePlayerInTurn() {
+        this.playerName.setText(this.game.getPlayerInTurn());
+    }
 
     private void updateCardInfo() {
-        Card card = this.game.nextCard();
+        Card card = this.game.getCardInTurn();
         switch (card.getType()) {
             case 0:
                 this.endCard();
@@ -70,13 +77,13 @@ public class GameSceneController implements Initializable {
         }
     }
 
+    private void endCard() {
+        this.application.setStartScene();
+    }
+
     private void basicCard(Card card) {
         this.cardName.setText(card.getName());
         this.cardDescription.setText(card.getDescription());
-    }
-
-    private void endCard() {
-        this.application.setStartScene();
     }
 
     @Override

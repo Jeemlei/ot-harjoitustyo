@@ -20,7 +20,7 @@
             <Label fx:id="cardDescription" alignment="TOP_LEFT" prefHeight="175.0" prefWidth="300.0" text="[kortinkuvaus]" wrapText="true" />
          </children>
       </VBox>
-      <Button fx:id="nextCardButton" layoutX="50.0" layoutY="327.0" onAction="#nextCard" text="Seuraava kortti" />
+      <Button fx:id="nextCardButton" layoutX="50.0" layoutY="327.0" onAction="#nextTurn" text="Seuraava kortti" />
       <Button fx:id="diceButton" layoutX="225.0" layoutY="327.0" onAction="#rollDice" text="Heitä" />
       <Label layoutX="280.0" layoutY="327.0" prefHeight="25.0" prefWidth="52.0" text="noppa:" />
       <Label fx:id="diceDisplay" alignment="CENTER" layoutX="325.0" layoutY="327.0" prefHeight="25.0" prefWidth="25.0" text="1" />

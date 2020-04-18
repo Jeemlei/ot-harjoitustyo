@@ -12,6 +12,8 @@ public class GameServices {
 
     private ArrayList<String> players;
     private Deck deck;
+    private int turn;
+    private Card cardInTurn;
 
     public GameServices() {
         this.players = new ArrayList<>();
@@ -31,7 +33,7 @@ public class GameServices {
     }
 
     public String removePlayer(int playerNo) {
-        if (playerNo >= this.players.size()) {
+        if (playerNo >= this.players.size() || playerNo < 0) {
             return "Pelaajan poistaminen epäonnistui!";
         }
         this.players.remove(playerNo);
@@ -41,10 +43,15 @@ public class GameServices {
     public void initGame() {
         this.deck = new Deck(this.getPlayerCount());
         this.deck.generateNewDeck();
+        this.cardInTurn = this.deck.nextCard();
     }
     
-    public Card nextCard() {
-        return this.deck.nextCard();
+    public void nextTurn() {
+        this.turn++;
+        if (this.turn >= this.players.size()) {
+            this.turn = 0;
+        }
+        this.cardInTurn = this.deck.nextCard();
     }
 
     public int getPlayerCount() {
@@ -53,5 +60,13 @@ public class GameServices {
     
     public ArrayList<String> getPlayers() {
         return this.players;
+    }
+    
+    public Card getCardInTurn() {
+        return this.cardInTurn;
+    }
+    
+    public String getPlayerInTurn() {
+        return this.players.get(this.turn);
     }
 }
