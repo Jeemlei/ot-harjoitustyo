@@ -43,7 +43,7 @@ Kolmannessa näkymässä pelaaja vahvistaa haluavansa luovuttaa, minkä jälkeen
 
 ### Pelin aikana
 
-- [x] Seuraavan kortin kääntäminen
+- [x] Seuraavan kortin kääntäminen **TEHTY**
   - Vuoro siirtyy seuraavalle pelaajalle
   - Seuraavan kortin tiedot ilmestyvät näkyviin
 - [ ] Nopan heittäminen
