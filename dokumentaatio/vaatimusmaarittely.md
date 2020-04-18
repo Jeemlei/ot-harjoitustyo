@@ -35,9 +35,9 @@ Kolmannessa näkymässä pelaaja vahvistaa haluavansa luovuttaa, minkä jälkeen
 
 ### Pelin alkaessa
 
-- [ ] Ohjelma hakee kortit muistista
+- [x] Ohjelma hakee kortit muistista **TEHTY**
   - Korttien tiedot on tallennettuna tiedostoon tai tietokantaan
-- [ ] Ohjelma luo korteista pakan
+- [x] Ohjelma luo korteista pakan **TEHTY**
   - Kortit laitetaan pakkaan satunnaiseen järjestykseen
   - Pakan koko riippuu pelaajien lukumäärästä
 
