@@ -1,6 +1,8 @@
 package logicTests;
 
 import domain.GameServices;
+import domain.deck.Card;
+import domain.deck.EndCard;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -36,19 +38,24 @@ public class GameServicesTest {
     @After
     public void tearDown() {
     }
+    
+    private void addPlayers(int count) {
+        String p = "Player";
+        for (int i = 0; i < count; i++) {
+            this.game.addPlayer(p + i);
+        }
+    }
 
     @Test
     public void addPlayer() {
-        this.game.addPlayer("a");
+        this.addPlayers(1);
         int playerCount = this.game.getPlayerCount();
         assertThat(playerCount, is(1));
     }
 
     @Test
     public void addTooManyPlayers() {
-        for (int i = 0; i < 9; i++) {
-            this.game.addPlayer(Integer.toString(i));
-        }
+        this.addPlayers(9);
         int playerCount = this.game.getPlayerCount();
         assertThat(playerCount, is(8));
     }
@@ -62,15 +69,15 @@ public class GameServicesTest {
 
     @Test
     public void addPlayerAlreadyInGame() {
-        this.game.addPlayer("a");
-        this.game.addPlayer("a");
+        this.addPlayers(1);
+        this.addPlayers(1);
         int playerCount = this.game.getPlayerCount();
         assertThat(playerCount, is(1));
     }
     
     @Test
     public void removePlayer() {
-        this.game.addPlayer("a");
+        this.addPlayers(1);
         this.game.removePlayer(0);
         int playerCount = this.game.getPlayerCount();
         assertThat(playerCount, is(0));
@@ -78,21 +85,72 @@ public class GameServicesTest {
     
     @Test
     public void removeRightPlayer() {
-        this.game.addPlayer("a");
-        this.game.addPlayer("b");
-        this.game.addPlayer("c");
+        this.addPlayers(3);
         this.game.removePlayer(1);
-        String playerA = this.game.getPlayers().get(0);
-        assertThat(playerA, is("a"));
-        String playerC = this.game.getPlayers().get(1);
-        assertThat(playerC, is("c"));
+        String player1 = this.game.getPlayers().get(0);
+        assertThat(player1, is("Player0"));
+        String player3 = this.game.getPlayers().get(1);
+        assertThat(player3, is("Player2"));
     }
     
     @Test
     public void removePlayerNotExisting() {
-        this.game.addPlayer("a");
+        this.addPlayers(1);
         this.game.removePlayer(1);
+        this.game.removePlayer(-1);
         int playerCount = this.game.getPlayerCount();
         assertThat(playerCount, is(1));
+    }
+    
+    @Test
+    public void rollDiceGivesNumber() {
+        int n = this.game.rollDice(1);
+        assertThat(n, is(1));
+    }
+    
+    @Test
+    public void initializeGameDeck() {
+        this.addPlayers(3);
+        this.game.initGame();
+        assertThat(this.game.getCardInTurn(), instanceOf(Card.class));
+    }
+    
+    @Test
+    public void nextTurnLoops() {
+        this.addPlayers(3);
+        this.game.initGame();
+        for (int i = 0; i < 5; i++) {
+            this.game.nextTurn();
+        }
+        assertThat(this.game.getPlayerInTurn(), is("Player2"));
+    }
+    
+    @Test
+    public void firstAddedPlayerForfeits() {
+        this.addPlayers(3);
+        this.game.initGame();
+        this.game.forfeitPlayerInTurn();
+        assertThat(this.game.getPlayerCount(), is(2));
+        assertThat(this.game.getPlayerInTurn(), is("Player1"));
+    }
+    
+    @Test
+    public void lastAddedPlayerForfeits() {
+        this.addPlayers(3);
+        this.game.initGame();
+        this.game.nextTurn();
+        this.game.nextTurn();
+        this.game.forfeitPlayerInTurn();
+        assertThat(this.game.getPlayerCount(), is(2));
+        assertThat(this.game.getPlayerInTurn(), is("Player0"));
+    }
+    
+    @Test
+    public void endCardAddedWhenOnlyOnePlayerLeft() {
+        this.addPlayers(3);
+        this.game.initGame();
+        this.game.forfeitPlayerInTurn();
+        this.game.forfeitPlayerInTurn();
+        assertThat(this.game.getCardInTurn(), instanceOf(EndCard.class));
     }
 }
