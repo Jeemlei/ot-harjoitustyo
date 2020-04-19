@@ -32,7 +32,7 @@ public class GameSceneController implements Initializable {
         this.updatePlayerInTurn();
         this.updateCardInfo();
     }
-    
+
     public void update() {
         this.updatePlayerInTurn();
         this.updateCardInfo();
@@ -66,7 +66,7 @@ public class GameSceneController implements Initializable {
     private void rollDice(ActionEvent event) {
         this.diceDisplay.setText("" + this.game.rollDice(6));
     }
-    
+
     private void updatePlayerInTurn() {
         this.playerName.setText(this.game.getPlayerInTurn());
     }

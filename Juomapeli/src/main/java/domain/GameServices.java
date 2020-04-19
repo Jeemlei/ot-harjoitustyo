@@ -55,7 +55,7 @@ public class GameServices {
         }
         this.cardInTurn = this.deck.nextCard();
     }
-    
+
     public int rollDice(int faces) {
         return new Random().nextInt(faces) + 1;
     }
@@ -64,10 +64,9 @@ public class GameServices {
         this.removePlayer(this.turn);
         if (this.getPlayerCount() <= 1) {
             this.deck.addCardOnTop(new EndCard());
-            this.nextTurn();
-        } else {
-            this.cardInTurn = this.deck.nextCard();
         }
+        this.turn--;
+        this.nextTurn();
     }
 
     public int getPlayerCount() {
