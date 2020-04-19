@@ -66,7 +66,7 @@ public class JSONCardsDao implements CardsDao {
     }
 
     @Override
-    public ArrayList<Card> getAll() throws Exception {
+    public ArrayList<Card> getAll() {
         return this.cards;
     }
 }
