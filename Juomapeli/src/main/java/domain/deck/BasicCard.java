@@ -5,7 +5,7 @@ package domain.deck;
  * @author Eemeli
  */
 public class BasicCard implements Card {
-    
+
     private final String name;
     private final String description;
     private final int[] pcs4;
@@ -30,34 +30,34 @@ public class BasicCard implements Card {
 
     @Override
     public int getType() {
-        return 1;
+        return Card.BASIC_CARD;
     }
 
     @Override
-    public int getPcsRandom(int palyerCount) {
-        if (palyerCount<=4) {
+    public int getPcsRandom(int playerCount) {
+        if (playerCount <= 4) {
             return this.pcs4[0];
         }
         return this.pcs8[0];
     }
 
     @Override
-    public int getPcsFirst(int palyerCount) {
+    public int getPcsFirst(int playerCount) {
         return 0;
     }
 
     @Override
-    public int getPcsSecond(int palyerCount) {
+    public int getPcsSecond(int playerCount) {
         return 0;
     }
 
     @Override
-    public int getPcsThird(int palyerCount) {
+    public int getPcsThird(int playerCount) {
         return 0;
     }
 
     @Override
-    public int getPcsFourth(int palyerCount) {
+    public int getPcsFourth(int playerCount) {
         return 0;
     }
 }

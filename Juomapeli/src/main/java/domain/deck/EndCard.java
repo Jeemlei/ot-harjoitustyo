@@ -18,31 +18,31 @@ public class EndCard implements Card {
 
     @Override
     public int getType() {
+        return Card.END_CARD;
+    }
+
+    @Override
+    public int getPcsRandom(int playerCount) {
         return 0;
     }
 
     @Override
-    public int getPcsRandom(int palyerCount) {
+    public int getPcsFirst(int playerCount) {
         return 0;
     }
 
     @Override
-    public int getPcsFirst(int palyerCount) {
+    public int getPcsSecond(int playerCount) {
         return 0;
     }
 
     @Override
-    public int getPcsSecond(int palyerCount) {
+    public int getPcsThird(int playerCount) {
         return 0;
     }
 
     @Override
-    public int getPcsThird(int palyerCount) {
-        return 0;
-    }
-
-    @Override
-    public int getPcsFourth(int palyerCount) {
+    public int getPcsFourth(int playerCount) {
         return 0;
     }
 }

@@ -65,7 +65,7 @@ public class Deck {
         for (int i = 0; i < this.differentCards.size(); i++) {
             Card card = this.differentCards.get(i);
             switch (card.getType()) {
-                case 1:
+                case Card.BASIC_CARD:
                     this.addBasicCard(card);
             }
         }
@@ -90,7 +90,7 @@ public class Deck {
             }
         }
     }
-    
+
     public void addCardOnTop(Card card) {
         this.deck.addFirst(card);
     }
