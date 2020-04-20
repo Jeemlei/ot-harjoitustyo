@@ -43,21 +43,33 @@ public class BasicCard implements Card {
 
     @Override
     public int getPcsFirst(int playerCount) {
-        return 0;
+        if (playerCount <= 4) {
+            return this.pcs4[1];
+        }
+        return this.pcs8[1];
     }
 
     @Override
     public int getPcsSecond(int playerCount) {
-        return 0;
+        if (playerCount <= 4) {
+            return this.pcs4[2];
+        }
+        return this.pcs8[2];
     }
 
     @Override
     public int getPcsThird(int playerCount) {
-        return 0;
+        if (playerCount <= 4) {
+            return this.pcs4[3];
+        }
+        return this.pcs8[3];
     }
 
     @Override
     public int getPcsFourth(int playerCount) {
-        return 0;
+        if (playerCount <= 4) {
+            return this.pcs4[4];
+        }
+        return this.pcs8[4];
     }
 }

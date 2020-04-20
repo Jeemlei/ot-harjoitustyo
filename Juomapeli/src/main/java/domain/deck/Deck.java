@@ -89,6 +89,18 @@ public class Deck {
                     break;
             }
         }
+        for (int i = 0; i < card.getPcsFirst(playerCount); i++) {
+            this.pcsFirst.add(new BasicCard(card.getName(), card.getDescription(), new int[0], new int[0]));
+        }
+        for (int i = 0; i < card.getPcsSecond(playerCount); i++) {
+            this.pcsSecond.add(new BasicCard(card.getName(), card.getDescription(), new int[0], new int[0]));
+        }
+        for (int i = 0; i < card.getPcsThird(playerCount); i++) {
+            this.pcsThird.add(new BasicCard(card.getName(), card.getDescription(), new int[0], new int[0]));
+        }
+        for (int i = 0; i < card.getPcsFourth(playerCount); i++) {
+            this.pcsFourth.add(new BasicCard(card.getName(), card.getDescription(), new int[0], new int[0]));
+        }
     }
 
     public void addCardOnTop(Card card) {

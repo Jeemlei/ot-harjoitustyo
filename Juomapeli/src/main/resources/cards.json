@@ -35,6 +35,12 @@
             "description":"Suututit Jumalan. Juo kymmenen (10) huikkaa.",
             "max4plrs":[1,0,0,0,0],
             "max8plrs":[1,0,0,0,0]
+        },
+        {
+            "name":"Anna sen soida",
+            "description":"Heitä noppaa ja kuunnelkaa numeroa vastaavaa soittolistaa\n1. Saat itse valita soittolistan\n2. ReggaeBBQ\n3. Classical classics\n4. 90s Eurodance\n5. Juomalista\n6. Suomirockin klassikot",
+            "max4plrs":[0,0,1,0,1],
+            "max8plrs":[0,0,1,1,1]
         }
     ]
 }
