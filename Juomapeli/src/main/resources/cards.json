@@ -3,32 +3,32 @@
         {
             "name":"Siideripissis",
             "description":"Ota yksi (1) huikka.",
-            "max4plrs":[5,0,0,0,0],
-            "max8plrs":[7,0,0,0,0]
+            "max4plrs":[6,0,0,0,0],
+            "max8plrs":[8,0,0,0,0]
         },
         {
             "name":"Kaljamaisteri",
             "description":"Juo kaksi (2) huikkaa.",
-            "max4plrs":[4,0,0,0,0],
-            "max8plrs":[6,0,0,0,0]
+            "max4plrs":[5,0,0,0,0],
+            "max8plrs":[7,0,0,0,0]
         },
         {
             "name":"Alkoholisti",
             "description":"Ota kolme (3) huikkaa.",
-            "max4plrs":[3,0,0,0,0],
-            "max8plrs":[4,0,0,0,0]
+            "max4plrs":[4,0,0,0,0],
+            "max8plrs":[5,0,0,0,0]
         },
         {
             "name":"Juomanjakaja",
             "description":"Jaa neljä (4) huikkaa.",
-            "max4plrs":[3,0,0,0,0],
-            "max8plrs":[5,0,0,0,0]
+            "max4plrs":[4,0,0,0,0],
+            "max8plrs":[6,0,0,0,0]
         },
         {
             "name":"Malja maksalle",
             "description":"Jaa viisi (5) huikkaa.",
-            "max4plrs":[2,0,0,0,0],
-            "max8plrs":[3,0,0,0,0]
+            "max4plrs":[3,0,0,0,0],
+            "max8plrs":[4,0,0,0,0]
         },
         {
             "name":"Päivi Räsänen",
@@ -41,6 +41,120 @@
             "description":"Heitä noppaa ja kuunnelkaa numeroa vastaavaa soittolistaa\n1. Saat itse valita soittolistan\n2. ReggaeBBQ\n3. Classical classics\n4. 90s Eurodance\n5. Juomalista\n6. Suomirockin klassikot",
             "max4plrs":[0,0,1,0,1],
             "max8plrs":[0,0,1,1,1]
+        },
+        {
+            "name":"Peukalo keskellä kämmentä",
+            "description":"Olet kömpelö ja läikytät juomaasi. Kaada omasta juomastasi Graalin maljaan.",
+            "max4plrs":[0,1,1,0,0],
+            "max8plrs":[0,1,2,0,0]
+        },
+        {
+            "name":"Baarimikko",
+            "description":"Kaada Graalin maljaan kaksi shottia omavalintaista viinaa.",
+            "max4plrs":[0,1,0,0,0],
+            "max8plrs":[0,1,0,0,0]
+        },
+        {
+            "name":"Kari Grandi",
+            "description":"Kaikkien janoisten sankari.\nKaada Graalin maljaan shotti valitsemaasi viinaa ja loraus omaa juomaasi. Tarkista vielä tuotostesi tulos, ottamalla yksi (1) huikka Graalin maljasta.",
+            "max4plrs":[0,0,1,0,0],
+            "max8plrs":[0,0,1,0,0]
+        },
+        {
+            "name":"Robin Hood",
+            "description":"Varastat rikkailta ja annat köyhille!\nValitse kaksi (2) pelaajaa joilla on mielestäsi eniten juotavaa ja kaada kummankin juomasta kaksi (2) shottia Graalin maljaan.",
+            "max4plrs":[0,0,1,0,0],
+            "max8plrs":[0,0,1,0,0]
+        },
+        {
+            "name":"Tiskijukka",
+            "description":"Laita valitsemasi biisi jonoon ja juo kestominuuttien verran huikkia",
+            "max4plrs":[0,1,1,2,1],
+            "max8plrs":[0,2,2,2,1]
+        },
+        {
+            "name":"Matti Vanhanen",
+            "description":"Otat lahjuksia vastaan. Ota yksi (1) huikka jokaisen pelaajan juomasta.",
+            "max4plrs":[1,0,0,0,0],
+            "max8plrs":[1,0,0,0,0]
+        },
+        {
+            "name":"Hieronta",
+            "description":"Olet voittanut ilmaisen jalkahieronnan.\nValitse pelaaja, joka hieroo jalkojasi seuraavaan vuoroosi asti.\nMuut kortit eivät vaikuta hierojaan kierroksen ajan.",
+            "max4plrs":[0,1,0,1,0],
+            "max8plrs":[0,1,1,0,1]
+        },
+        {
+            "name":"Vitsiniekka",
+            "description":"Kerro vitsi.\nKaikki jotka nauravat tai edes tirskahtavat juovat kolme (3) huikkaa.\nJos kukaan ei naura, juot itse viisi (5) huikkaa.",
+            "max4plrs":[0,0,1,0,1],
+            "max8plrs":[0,0,1,1,1]
+        },
+        {
+            "name":"Tissuttelija",
+            "description":"Tissuttele jatkuvasti seuraavaan vuoroosi asti.\nMuut kortit eivät vaikuta sinuun tämän kierroksen ajan.",
+            "max4plrs":[1,0,0,0,0],
+            "max8plrs":[2,0,0,0,0]
+        },
+        {
+            "name":"Pohjanmaan kautta",
+            "description":"Totuus löytyy pullon pohjalta.\nJuo juomasi kerralla ja kerro sitten jokin elämänviisaus.",
+            "max4plrs":[1,0,0,0,0],
+            "max8plrs":[2,0,0,0,0]
+        },
+        {
+            "name":"Kristus",
+            "description":"Juot muiden syntien puolesta kaikki hörpyt yhden kierroksen ajan.",
+            "max4plrs":[1,0,0,0,0],
+            "max8plrs":[1,0,0,0,0]
+        },
+        {
+            "name":"Kaljahaaste",
+            "description":"Juo kaljahaaste (3x0,33l) litran tuopista.",
+            "max4plrs":[0,0,0,1,0],
+            "max8plrs":[0,0,1,0,1]
+        },
+        {
+            "name":"Submarine",
+            "description":"Tiputa shotti litran tuoppiin olutta ja juo.",
+            "max4plrs":[0,0,1,0,0],
+            "max8plrs":[0,0,0,1,0]
+        },
+        {
+            "name":"Totuus vai tehtävä",
+            "description":"Pelatkaa kierros totuutta ja tehtävää.",
+            "max4plrs":[2,0,0,0,0],
+            "max8plrs":[1,0,0,0,0]
+        },
+        {
+            "name":"Never have I ever",
+            "description":"Pelatkaa kierros \"En ole koskaan\" -peliä.",
+            "max4plrs":[2,0,0,0,0],
+            "max8plrs":[2,0,0,0,0]
+        },
+        {
+            "name":"Kyselytunti",
+            "description":"Valitse pelaaja, jonka kanssa keskustelet vain kysymyksin.\nHäviäjä juo kolme (3) huikkaa.",
+            "max4plrs":[1,0,0,0,0],
+            "max8plrs":[1,0,0,0,0]
+        },
+        {
+            "name":"Kategoria",
+            "description":"Se joka ei tiedä miten kategoria toimii juo viisi (5) huikkaa.\nVuorossa oleva pelaaja valitsee kategorian ja aloittaa kierroksen.\nKategorian häviäjä juo kolme (3) huikkaa.",
+            "max4plrs":[2,0,0,0,0],
+            "max8plrs":[1,0,0,0,0]
+        },
+        {
+            "name":"Sitä hyvää",
+            "description":"Valitkaa yleisesti paheksuttu henkilö, josta kerrotte vuorotellen yhden hyvän asian.\nLopuksi äänestätte kuka kertoi huonoimman.\nHäviäjä juo neljä (4) huikkaa.",
+            "max4plrs":[1,0,0,0,0],
+            "max8plrs":[1,0,0,0,0]
+        },
+        {
+            "name":"Vesiputous",
+            "description":"Se joka ei tiedä miten vesiputous toimii juo viisi (5) huikkaa.",
+            "max4plrs":[0,1,0,1,1],
+            "max8plrs":[0,1,0,0,1]
         }
     ]
 }

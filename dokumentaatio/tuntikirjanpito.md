@@ -27,4 +27,5 @@
 | 19.4.  | 1      | Luovutusominaisuuden toteutus logiikassa sekä käyttöliittymässä |
 |        | 1,5    | Perusversion viimeistely, testien kirjoittamista ja pientä koodin siistimistä |
 | 20.4.  | 2      | Dokumentointia |
-|**yht.**|**37,5**| |
+|        | 1      | Korttien lisäämiistä .json tiedostoon |
+|**yht.**|**38,5**| |
