@@ -74,10 +74,10 @@ public class GameSceneController implements Initializable {
     private void updateCardInfo() {
         Card card = this.game.getCardInTurn();
         switch (card.getType()) {
-            case 0:
+            case Card.END_CARD:
                 this.endCard();
                 break;
-            case 1:
+            case Card.BASIC_CARD:
                 this.basicCard(card);
         }
     }
