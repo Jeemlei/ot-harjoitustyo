@@ -26,4 +26,5 @@
 | 18.4.  | 0,5    | Vuoron seuranta ja vuorossa olevan pelaajan päivitys |
 | 19.4.  | 1      | Luovutusominaisuuden toteutus logiikassa sekä käyttöliittymässä |
 |        | 1,5    | Perusversion viimeistely, testien kirjoittamista ja pientä koodin siistimistä |
-|**yht.**|**35,5**| |
+| 20.4.  | 2      | Dokumentointia |
+|**yht.**|**37,5**| |
