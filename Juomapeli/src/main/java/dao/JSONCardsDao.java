@@ -12,14 +12,20 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
+ * Data access object for accessing card info in a JSON file
  *
  * @author Eemeli
  */
 public class JSONCardsDao implements CardsDao {
 
-    JSONObject jsonFile;
-    ArrayList<Card> cards;
+    private JSONObject jsonFile;
+    private ArrayList<Card> cards;
 
+    /**
+     * Fetches and parses JSON from resources containing card information.
+     *
+     * @throws IOException error during the access of the JSON
+     */
     public JSONCardsDao() throws IOException {
         this.getJSON();
         this.parseCards();
@@ -56,7 +62,7 @@ public class JSONCardsDao implements CardsDao {
             this.cards.add(new BasicCard(name, description, pcs4, pcs8));
         }
     }
-    
+
     private int[] parsePcsArray(JSONArray json) {
         int[] arr = new int[json.length()];
         for (int i = 0; i < json.length(); i++) {

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import ui.JuomapeliUI;
 
 /**
- * FXML Controller class
+ * FXML Controller class for the start scene.
  *
  * @author Eemeli
  */
@@ -20,14 +20,36 @@ public class StartSceneController implements Initializable {
     private GameServices game;
     private JuomapeliUI application;
 
+    /**
+     * Sets the game logic used by this controller.
+     * 
+     * @param gameServices object with the game services
+     */
     public void setGameDomain(GameServices gameServices) {
         this.game = gameServices;
     }
 
+    /**
+     * Sets the main UI-class used by this controller.
+     * 
+     * @param application UI with a scene controlled by this controller
+     */
     public void setApplication(JuomapeliUI application) {
         this.application = application;
     }
 
+    /**
+     * Updates the start scene.
+     */
+    public void update() {
+        this.update("");
+    }
+
+    /**
+     * Updates the start scene.
+     * 
+     * @param warningMsg warning message to be displayed
+     */
     public void update(String warningMsg) {
         int playerCount = this.game.getPlayerCount();
         ArrayList<String> players = this.game.getPlayers();
@@ -72,33 +94,33 @@ public class StartSceneController implements Initializable {
 
     @FXML
     private Label player8;
-    
+
     @FXML
     private Button b0;
-    
+
     @FXML
     private Button b1;
-    
+
     @FXML
     private Button b2;
-    
+
     @FXML
     private Button b3;
-    
+
     @FXML
     private Button b4;
-    
+
     @FXML
     private Button b5;
-    
+
     @FXML
     private Button b6;
-    
+
     @FXML
     private Button b7;
 
     private Label[] playerLabels;
-    
+
     private Button[] removeButtons;
 
     @FXML
@@ -117,7 +139,7 @@ public class StartSceneController implements Initializable {
     private void startGame(ActionEvent event) {
         if (this.game.getPlayerCount() >= 3) {
             this.game.initGame();
-            this.application.startNewGame();
+            this.application.setGameScene();
         } else {
             this.update("Liian vähän pelaajia!");
         }

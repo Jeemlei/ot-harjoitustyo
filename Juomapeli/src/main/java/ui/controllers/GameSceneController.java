@@ -11,7 +11,7 @@ import domain.deck.Card;
 import ui.JuomapeliUI;
 
 /**
- * FXML Controller class
+ * FXML Controller class for the game scene.
  *
  * @author Eemeli
  */
@@ -20,19 +20,27 @@ public class GameSceneController implements Initializable {
     private GameServices game;
     private JuomapeliUI application;
 
+    /**
+     * Sets the game logic used by this controller.
+     * 
+     * @param gameServices object with the game services
+     */
     public void setGameDomain(GameServices gameServices) {
         this.game = gameServices;
     }
 
+    /**
+     * Sets the main UI-class used by this controller.
+     * 
+     * @param application UI with a scene controlled by this controller
+     */
     public void setApplication(JuomapeliUI application) {
         this.application = application;
     }
 
-    public void start() {
-        this.updatePlayerInTurn();
-        this.updateCardInfo();
-    }
-
+    /**
+     * Updates the game scene.
+     */
     public void update() {
         this.updatePlayerInTurn();
         this.updateCardInfo();
@@ -93,6 +101,5 @@ public class GameSceneController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
     }
 }

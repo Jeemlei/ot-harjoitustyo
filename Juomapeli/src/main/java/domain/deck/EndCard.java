@@ -1,19 +1,21 @@
 package domain.deck;
 
 /**
+ * Representation of the end card type. Used as a flag for the end of the game.
+ * Every method returns a zero or an empty string.
  *
  * @author Eemeli
  */
 public class EndCard implements Card {
-    
+
     @Override
     public String getName() {
-        return "Viimeinen kortti!";
+        return "";
     }
 
     @Override
     public String getDescription() {
-        return "Peli on ohi!";
+        return "";
     }
 
     @Override

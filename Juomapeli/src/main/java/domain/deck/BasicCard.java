@@ -1,6 +1,7 @@
 package domain.deck;
 
 /**
+ * Representation of the basic card type.
  *
  * @author Eemeli
  */
@@ -11,6 +12,19 @@ public class BasicCard implements Card {
     private final int[] pcs4;
     private final int[] pcs8;
 
+    /**
+     * Basic card object.
+     *
+     * @param name name of the card
+     *
+     * @param description description of the card
+     *
+     * @param pcs4 occurrences in the different parts of the deck in a game with
+     * a maximum of four (4) players
+     *
+     * @param pcs8 occurrences in the different parts of the deck in a game with
+     * a maximum of eight (8) players
+     */
     public BasicCard(String name, String description, int[] pcs4, int[] pcs8) {
         this.name = name;
         this.description = description;

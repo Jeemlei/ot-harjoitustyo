@@ -11,6 +11,7 @@ import ui.controllers.GameSceneController;
 import ui.controllers.ForfeitSceneController;
 
 /**
+ * Main class for controlling the UI.
  *
  * @author Eemeli
  */
@@ -25,10 +26,15 @@ public class JuomapeliUI extends Application {
     private Scene forfeitScene;
     private ForfeitSceneController forfeitSceneController;
 
+    /**
+     * Injects game logic dependencies to the UI-controllers
+     *
+     * @throws Exception error with the FXML-resources
+     */
     @Override
     public void init() throws Exception {
         this.game = new GameServices();
-        
+
         FXMLLoader startSceneLoader = new FXMLLoader(getClass().getResource("/fxml/StartScene.fxml"));
         Parent startPane = startSceneLoader.load();
         this.startSceneController = startSceneLoader.getController();
@@ -59,22 +65,35 @@ public class JuomapeliUI extends Application {
         this.setStartScene();
         stage.show();
     }
-    
-    public void startNewGame() {
-        this.setGameScene();
-        this.gameSceneController.start();
-    }
 
+    /**
+     * Sets the start scene on the stage and calls the controller to update the
+     * scene.
+     *
+     * @see ui.controllers.StartSceneController#update()
+     */
     public void setStartScene() {
         this.stage.setScene(this.startScene);
-        this.startSceneController.update("");
+        this.startSceneController.update();
     }
 
+    /**
+     * Sets the game scene on the stage and calls the controller to update the
+     * scene.
+     *
+     * @see ui.controllers.GameSceneController#update()
+     */
     public void setGameScene() {
         this.stage.setScene(this.gameScene);
         this.gameSceneController.update();
     }
-    
+
+    /**
+     * Sets the forfeit scene on the stage and calls the controller to update
+     * the playerName label.
+     *
+     * @see ui.controllers.ForfeitSceneController#updatePlayer()
+     */
     public void setForfeitScene() {
         this.stage.setScene(this.forfeitScene);
         this.forfeitSceneController.updatePlayer();

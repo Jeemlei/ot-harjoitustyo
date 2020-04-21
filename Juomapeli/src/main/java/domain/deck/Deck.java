@@ -9,6 +9,7 @@ import java.util.Deque;
 import java.util.Random;
 
 /**
+ * Deck for handling cards.
  *
  * @author Eemeli
  */
@@ -22,8 +23,10 @@ public class Deck {
     private ArrayList<Card> pcsFourth;
     private Deque<Card> deck;
 
-    public Deck(int playerCount) {
-        this.playerCount = playerCount;
+    /**
+     * Fetches the different kind of cards with a DAO.
+     */
+    public Deck() {
         try {
             CardsDao cardsDao = new JSONCardsDao();
             this.differentCards = cardsDao.getAll();
@@ -32,7 +35,14 @@ public class Deck {
         }
     }
 
-    public void generateNewDeck() {
+    /**
+     * Generates and shuffles a new deck, based on the number of players in the
+     * game.
+     *
+     * @param playerCount the number of players in the game
+     */
+    public void generateNewDeck(int playerCount) {
+        this.playerCount = playerCount;
         this.deck = new ArrayDeque<>();
 
         this.generateNewQuarters();
@@ -103,10 +113,20 @@ public class Deck {
         }
     }
 
+    /**
+     * Adds a card on top of the deck.
+     *
+     * @param card the card to be added
+     */
     public void addCardOnTop(Card card) {
         this.deck.addFirst(card);
     }
 
+    /**
+     * Pulls out the card on top of the deck.
+     *
+     * @return Card-object from the top of the deck
+     */
     public Card nextCard() {
         return this.deck.pollFirst();
     }
