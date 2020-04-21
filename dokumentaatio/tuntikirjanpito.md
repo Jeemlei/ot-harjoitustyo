@@ -28,4 +28,5 @@
 |        | 1,5    | Perusversion viimeistely, testien kirjoittamista ja pientä koodin siistimistä |
 | 20.4.  | 2      | Dokumentointia |
 |        | 1      | Korttien lisäämiistä .json tiedostoon |
-|**yht.**|**38,5**| |
+| 21.4.  | 3      | JavaDoc kommenttien kirjoittamista |
+|**yht.**|**41,5**| |
