@@ -51,6 +51,16 @@ mvn jacoco:report
 
 Kattavuusraporttia voi tarkastella avaamalla selaimella tiedoston _target/site/jacoco/index.html_
 
+### JavaDoc
+
+JavaDoc generoidaan komennolla
+
+```
+mvn javadoc:javadoc
+```
+
+JavaDocia voi tarkastella avaamalla selaimella tiedosto target/site/apidocs/index.html
+
 ### Checkstyle
 
 Tiedoston [checkstyle.xml](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/checkstyle.xml) määrittelemät tarkistukset suoritetaan komennolla
