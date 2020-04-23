@@ -9,6 +9,7 @@ import domain.GameServices;
 import ui.controllers.StartSceneController;
 import ui.controllers.GameSceneController;
 import ui.controllers.ForfeitSceneController;
+import ui.controllers.EndSceneController;
 
 /**
  * Main class for controlling the UI.
@@ -25,6 +26,8 @@ public class JuomapeliUI extends Application {
     private GameSceneController gameSceneController;
     private Scene forfeitScene;
     private ForfeitSceneController forfeitSceneController;
+    private Scene endScene;
+    private EndSceneController endSceneController;
 
     /**
      * Injects game logic dependencies to the UI-controllers
@@ -55,6 +58,13 @@ public class JuomapeliUI extends Application {
         this.forfeitSceneController.setGameDomain(this.game);
         this.forfeitSceneController.setApplication(this);
         this.forfeitScene = new Scene(forfeitPane);
+        
+        FXMLLoader endSceneLoader = new FXMLLoader(getClass().getResource("/fxml/EndScene.fxml"));
+        Parent endPane = endSceneLoader.load();
+        this.endSceneController = endSceneLoader.getController();
+        this.endSceneController.setGameDomain(this.game);
+        this.endSceneController.setApplication(this);
+        this.endScene = new Scene(endPane);
     }
 
     @Override
@@ -97,6 +107,14 @@ public class JuomapeliUI extends Application {
     public void setForfeitScene() {
         this.stage.setScene(this.forfeitScene);
         this.forfeitSceneController.updatePlayer();
+    }
+    
+    public void setEndScene() {
+        this.stage.setScene(this.endScene);
+    }
+    
+    public void closeGame()  {
+        stage.close();
     }
 
     public static void main(String[] args) {

@@ -91,7 +91,7 @@ public class GameSceneController implements Initializable {
     }
 
     private void endCard() {
-        this.application.setStartScene();
+        this.application.setEndScene();
     }
 
     private void basicCard(Card card) {
