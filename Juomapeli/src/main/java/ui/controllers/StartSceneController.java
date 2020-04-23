@@ -145,6 +145,9 @@ public class StartSceneController implements Initializable {
         }
     }
 
+    /**
+     * Initializes the controller class.
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         Label[] labels = {this.player1, this.player2, this.player3, this.player4,

@@ -99,6 +99,9 @@ public class GameSceneController implements Initializable {
         this.cardDescription.setText(card.getDescription());
     }
 
+    /**
+     * Initializes the controller class.
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
     }

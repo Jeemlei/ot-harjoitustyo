@@ -59,6 +59,9 @@ public class ForfeitSceneController implements Initializable {
         this.application.setGameScene();
     }
 
+    /**
+     * Initializes the controller class.
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
     }
