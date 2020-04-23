@@ -3,6 +3,7 @@
 <?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
@@ -18,58 +19,65 @@
         <Label fx:id="warningLabel" layoutX="50.0" layoutY="65.0" prefHeight="17.0" prefWidth="184.0" textFill="RED" />
         <HBox layoutX="50.0" layoutY="100.0" prefHeight="200.0" prefWidth="300.0">
             <children>
-                <VBox prefHeight="200.0" prefWidth="150.0">
+                <VBox prefHeight="200.0" prefWidth="155.0">
                     <children>
-                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="155.0">
                             <children>
-                                <Label fx:id="player1" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Label fx:id="player1" alignment="CENTER" prefHeight="49.0" prefWidth="120.0"  text="" />
                                 <Button fx:id="b0" onAction="#removePlayer" text="X" />
                             </children>
                         </HBox>
-                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <Separator prefWidth="200.0" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="155.0">
                             <children>
-                                <Label fx:id="player2" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Label fx:id="player2" alignment="CENTER" prefHeight="50.0" prefWidth="120.0" text="" />
                                 <Button fx:id="b1" onAction="#removePlayer" text="X" />
                             </children>
                         </HBox>
-                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <Separator prefWidth="200.0" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="155.0">
                             <children>
-                                <Label fx:id="player3" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Label fx:id="player3" alignment="CENTER" prefHeight="50.0" prefWidth="120.0" text="" />
                                 <Button fx:id="b2" onAction="#removePlayer" text="X" />
                             </children>
                         </HBox>
-                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <Separator prefWidth="200.0" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="155.0">
                             <children>
-                                <Label fx:id="player4" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Label fx:id="player4" alignment="CENTER" prefHeight="50.0" prefWidth="120.0" text="" />
                                 <Button fx:id="b3" onAction="#removePlayer" text="X" />
                             </children>
                         </HBox>
                     </children>
                 </VBox>
-                <VBox prefHeight="200.0" prefWidth="150.0">
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+                <VBox prefHeight="200.0" prefWidth="145.0">
                     <children>
-                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="145.0">
                             <children>
-                                <Label fx:id="player5" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Label fx:id="player5" alignment="CENTER" prefHeight="50.0" prefWidth="120.0" text="" />
                                 <Button fx:id="b4" onAction="#removePlayer" text="X" />
                             </children>
                         </HBox>
-                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <Separator prefWidth="200.0" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="145.0">
                             <children>
-                                <Label fx:id="player6" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Label fx:id="player8" alignment="CENTER" prefHeight="50.0" prefWidth="120.0" text="" />
+                                <Button fx:id="b7" onAction="#removePlayer" text="X" />
+                            </children>
+                        </HBox>
+                  <Separator prefWidth="200.0" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="145.0">
+                            <children>
+                                <Label fx:id="player6" alignment="CENTER" prefHeight="50.0" prefWidth="120.0" text="" />
                                 <Button fx:id="b5" onAction="#removePlayer" text="X" />
                             </children>
                         </HBox>
-                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <Separator prefWidth="200.0" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="145.0">
                             <children>
-                                <Label fx:id="player7" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
+                                <Label fx:id="player7" alignment="CENTER" prefHeight="50.0" prefWidth="120.0" text="" />
                                 <Button fx:id="b6" onAction="#removePlayer" text="X" />
-                            </children>
-                        </HBox>
-                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-                            <children>
-                                <Label fx:id="player8" alignment="CENTER" prefHeight="50.0" prefWidth="125.0" text="tyhjä" />
-                                <Button fx:id="b7" onAction="#removePlayer" text="X" />
                             </children>
                         </HBox>
                     </children>

@@ -58,11 +58,16 @@ public class StartSceneController implements Initializable {
             this.removeButtons[i].setDisable(false);
         }
         for (int i = playerCount; i < 8; i++) {
-            this.playerLabels[i].setText("tyhjä");
+            this.playerLabels[i].setText("");
             this.removeButtons[i].setDisable(true);
         }
         this.playerTextField.setText("");
         this.warningLabel.setText(warningMsg);
+        if (this.game.getPlayerCount() < 3) {
+            this.startButton.setDisable(true);
+        } else {
+            this.startButton.setDisable(false);
+        }
     }
 
     @FXML
@@ -118,6 +123,9 @@ public class StartSceneController implements Initializable {
 
     @FXML
     private Button b7;
+    
+    @FXML
+    private Button startButton;
 
     private Label[] playerLabels;
 
