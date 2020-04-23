@@ -56,7 +56,7 @@ Kolmannessa näkymässä pelaaja vahvistaa haluavansa luovuttaa, minkä jälkeen
 
 Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. seuraavilla toiminnallisuuksilla
 
-- Lopetusnäkymä
+- [x] Lopetusnäkymä
   - Pelin loppuessa siirrytään lopetusnäkymään, jossa on mahdollista aloittaa uusi peli tai sulkea sovellus
 - Ohjenäkymä
   - Aloitusnäkymästä pääsee siirtymään ohjenäkymään, jossa on lyhyt kuvaus pelistä ja tiiviit ohjeet sen pelaamiseen
