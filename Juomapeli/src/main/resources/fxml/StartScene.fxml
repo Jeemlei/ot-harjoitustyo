@@ -62,13 +62,6 @@
                   <Separator prefWidth="200.0" />
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="145.0">
                             <children>
-                                <Label fx:id="player8" alignment="CENTER" prefHeight="50.0" prefWidth="120.0" text="" />
-                                <Button fx:id="b7" onAction="#removePlayer" text="X" />
-                            </children>
-                        </HBox>
-                  <Separator prefWidth="200.0" />
-                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="145.0">
-                            <children>
                                 <Label fx:id="player6" alignment="CENTER" prefHeight="50.0" prefWidth="120.0" text="" />
                                 <Button fx:id="b5" onAction="#removePlayer" text="X" />
                             </children>
@@ -78,6 +71,13 @@
                             <children>
                                 <Label fx:id="player7" alignment="CENTER" prefHeight="50.0" prefWidth="120.0" text="" />
                                 <Button fx:id="b6" onAction="#removePlayer" text="X" />
+                            </children>
+                        </HBox>
+                  <Separator prefWidth="200.0" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="145.0">
+                            <children>
+                                <Label fx:id="player8" alignment="CENTER" prefHeight="50.0" prefWidth="120.0" text="" />
+                                <Button fx:id="b7" onAction="#removePlayer" text="X" />
                             </children>
                         </HBox>
                     </children>
