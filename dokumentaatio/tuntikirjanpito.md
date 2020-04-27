@@ -31,4 +31,5 @@
 | 21.4.  | 3      | JavaDoc kommenttien kirjoittamista |
 | 23.4.  | 0,5    | Lopetusnäkymän toteutus ja integrointi |
 | 27.4.  | 0,5    | Käyttöohjeen kirjoitus |
-|**yht.**|**42,5**| |
+|        | 0,5    | Arkkitehtuurikuvauksen rakentamista |
+|**yht.**| **43** | |
