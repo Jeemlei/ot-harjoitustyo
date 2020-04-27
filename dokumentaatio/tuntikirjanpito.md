@@ -30,4 +30,5 @@
 |        | 1      | Korttien lisäämiistä .json tiedostoon |
 | 21.4.  | 3      | JavaDoc kommenttien kirjoittamista |
 | 23.4.  | 0,5    | Lopetusnäkymän toteutus ja integrointi |
-|**yht.**| **42** | |
+| 27.4.  | 0,5    | Käyttöohjeen kirjoitus |
+|**yht.**|**42,5**| |
