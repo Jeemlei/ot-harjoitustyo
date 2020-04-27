@@ -1,12 +1,20 @@
 # Arkkitehtuurikuvaus
 
-Viikkoon 4 mennessä toteutetut pelilogiikan kannalta oleelliset luokat:
+## Rakenne
 
-![vk4 luokkakaavio](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/luokkakaavio_vk4.png)
+Ohjelman arkkitehtuuri on kolmitasoinen ja näyttää seuraavalta:
 
-GameServicen ja ohjelman muiden osien suhdetta kuvaava luokka/pakkauskaavio:
+![Pakkausrakenne](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/pakkausrakenne.png)
 
-![vk4 pakkausrakenne](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/pakkausrakenne_vk4.png)
+Pakkaus _ui_ sisältää FXML:llä toteutetun käyttöliittymän kontrollerit, _domain_ pelilogiikan ja _dao_ korttitietojen muistista hakemiseen liittyvän koodin.
+
+<!---Viikkoon 4 mennessä toteutetut pelilogiikan kannalta oleelliset luokat:--->
+
+<!---![vk4 luokkakaavio](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/luokkakaavio_vk4.png)--->
+
+<!---GameServicen ja ohjelman muiden osien suhdetta kuvaava luokka/pakkauskaavio:--->
+
+<!---![vk4 pakkausrakenne](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/pakkausrakenne_vk4.png)--->
 
 ### Päätoiminnalisuudet
 
