@@ -125,9 +125,9 @@ public class GameServices {
     }
 
     /**
-     * Tells the names of the playerOrder in the game.
+     * Tells the names of the players in the game.
      *
-     * @return ArrayList of the names of the playerOrder
+     * @return ArrayList of the names of the players
      */
     public ArrayList<String> getPlayers() {
         return this.playerOrder;
