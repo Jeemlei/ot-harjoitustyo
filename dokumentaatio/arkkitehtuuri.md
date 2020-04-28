@@ -8,6 +8,21 @@ Ohjelman arkkitehtuuri on kolmitasoinen ja näyttää seuraavalta:
 
 Pakkaus _ui_ sisältää FXML:llä toteutetun käyttöliittymän kontrollerit, _domain_ pelilogiikan ja _dao_ korttitietojen muistista hakemiseen liittyvän koodin.
 
+## Käyttöliittymä
+
+Käyttöliittymä sisältää neljä erillistä näkymää
+
+- pelaajien lisääminen
+- pelinäkymä
+- luovuttaminen
+- lopetusnäkymä
+
+jokainen näistä on toteutettu omana [Scene](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/Scene.html)-oliona.  Näkymistä yksi kerrallaan on näkyvänä eli sijoitettuna sovelluksen [stageen](https://docs.oracle.com/javase/8/javafx/api/javafx/stage/Stage.html). Käyttöliittymä on rakennettu [.fxml-dokumenteilla](https://github.com/Jeemlei/ot-harjoitustyo/tree/master/Juomapeli/src/main/resources/fxml) ja näkymiä ohjataan pakkauksesta [ui.controllers](https://github.com/Jeemlei/ot-harjoitustyo/tree/master/Juomapeli/src/main/java/ui/controllers) löytyvillä FXML-ohjaimilla.
+
+Käyttöliittymä on pyritty eristämään täysin pelilogiikasta ja se ainoastaan kutsuu sopivin parametrein pelilogiikan toteuttavien olioiden metodeja.
+
+Kun pelissä tapahtuu muutoksia, kutsutaan näkyvillä olevan näkymän metodia update(), joka päivittää näkymän tiedot. Lopetusnäkymällä ei ole metodia update(), sillä se ei sisällä muuttuvia tietoja.
+
 <!---Viikkoon 4 mennessä toteutetut pelilogiikan kannalta oleelliset luokat:--->
 
 <!---![vk4 luokkakaavio](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/luokkakaavio_vk4.png)--->
