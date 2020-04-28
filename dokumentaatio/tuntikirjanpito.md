@@ -32,6 +32,6 @@
 | 23.4.  | 0,5    | Lopetusnäkymän toteutus ja integrointi |
 | 27.4.  | 0,5    | Käyttöohjeen kirjoitus |
 |        | 0,5    | Arkkitehtuurikuvauksen rakentamista |
-| 28.4.   | 1      | Dokumentointia |
+| 28.4.  | 1      | Dokumentointia |
 |        | 2      | Sääntökorttien toteutusta |
 |**yht.**| **46** | |
