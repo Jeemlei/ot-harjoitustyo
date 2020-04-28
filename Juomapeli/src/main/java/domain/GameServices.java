@@ -66,7 +66,7 @@ public class GameServices {
     }
 
     /**
-     * Creates new Deck, based on the number of playerOrder in the game.
+     * Creates new Deck, based on the number of players in the game.
      */
     public void initGame() {
         this.deck = new Deck();
