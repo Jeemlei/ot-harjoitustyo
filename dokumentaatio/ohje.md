@@ -1,4 +1,4 @@
-# Käyttöohje
+﻿# Käyttöohje
 
 Lataa tiedosto [Juomapeli.jar](https://github.com/Jeemlei/ot-harjoitustyo/releases)
 
@@ -29,6 +29,8 @@ Pelinäkymässä näkyy vuorossa olevan pelaajan nimi sekä avatun kortin nimi j
 Vuoro siirtyy seuraavalle pelaajalle "Seuraava kortti"-nappia painamalla.
 
 Muutamat kortit vaativat nopan heittoa, jota varten on "Heitä"-nappi näkymän oikeassa alalaidassa.
+
+Oikeassa laidassa näkyvät voimassa olevien sääntökorttien nimet.
 
 ## Luovuttaminen
 

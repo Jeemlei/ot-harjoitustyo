@@ -58,15 +58,16 @@ Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. seura
 
 - [x] Lopetusnäkymä
   - Pelin loppuessa siirrytään lopetusnäkymään, jossa on mahdollista aloittaa uusi peli tai sulkea sovellus
-- Ohjenäkymä
-  - Aloitusnäkymästä pääsee siirtymään ohjenäkymään, jossa on lyhyt kuvaus pelistä ja tiiviit ohjeet sen pelaamiseen
-- Eri korttien (46 uniikkia [korttia](https://drive.google.com/drive/folders/16hBqs6dDaSH-T-GKFYN9Hh7Yt22KrmyP?usp=sharing)) ominaisuuksiin liittyvän logiikan implementoinit
+- Eri korttien ominaisuuksiin liittyvän logiikan implementoinit
   - Korttikategoriat (vaatii todennäköisesti suuria muutoksia käyttöliittymään)
-  - Juomalaskurit pelaajille
   - Korttien kohdistaminen tiettyihin pelaajiin
   - Pelaajien hallussa olevien kyky- ja tiketti-korttien tarkastelu ja käyttäminen
-  - Aktiivisena olevien sääntö-korttien tarkastelu ja poistaminen tiketti-korteilla
+  - [x] Aktiivisena olevien sääntö-korttien tarkastelu **TEHTY**
+  - Aktiivisena olevien sääntö-korttien poistaminen tiketti-korteilla
   - jne.
+- Juomalaskurit pelaajille
+- Ohjenäkymä
+  - Aloitusnäkymästä pääsee siirtymään ohjenäkymään, jossa on lyhyt kuvaus pelistä ja tiiviit ohjeet sen pelaamiseen
 - Käyttöliittymään näkymä asetuksille
   - Pelin vaikeusasteen valinta
   - Omavalintaisten korttien jättäminen pois pelistä
