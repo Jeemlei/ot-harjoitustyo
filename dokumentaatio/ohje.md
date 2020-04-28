@@ -14,7 +14,7 @@ java -jar Juomapeli.jar
 
 Peli käynnistyy aloitusnäkymään
 
-![Aloitusnäkymä]()
+![Aloitusnäkymä](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/Kuvat/Aloitusnakyma.PNG)
 
 Peliin tulee lisätä 3-8 pelaajaa. Pelaajan lisääminen onnistuu kirjoittamalla pelaajan nimi tekstikenttään ja painamalla "Lisää pelaaja"-nappia tai Enter⏎-näppäintä. 
 
@@ -24,7 +24,7 @@ Kun pelissä on terpeeksi pelaajia, pelin aloitus onnistuu "Aloita peli"-nappia 
 
 Pelinäkymässä näkyy vuorossa olevan pelaajan nimi sekä avatun kortin nimi ja kuvaus.
 
-![Pelinäkymä]()
+![Pelinäkymä](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/Kuvat/Pelinakyma.PNG)
 
 Vuoro siirtyy seuraavalle pelaajalle "Seuraava kortti"-nappia painamalla.
 
@@ -34,7 +34,7 @@ Muutamat kortit vaativat nopan heittoa, jota varten on "Heitä"-nappi näkymän 
 
 Vuorossa oleva pelaaja voi luovuttaa painamalla "Luovuta"-nappia, mikä siirtää pelin luovutusnäkymään.
 
-![Luovutusnäkymä]()
+![Luovutusnäkymä](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/Kuvat/Luovutusnakyma.PNG)
 
 Luovutusnäkymässä pelaaja voi varmistaa haluavansa luovuttaa tai muuttaa vielä mieltään ja jatkaa peliä.
 
@@ -42,6 +42,6 @@ Luovutusnäkymässä pelaaja voi varmistaa haluavansa luovuttaa tai muuttaa viel
 
 Peli päättyy, kun kaikki kortit on käännetty tai pelissä on enää yksi pelaaja.
 
-![Lopetusnäkymä]()
+![Lopetusnäkymä](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/Kuvat/Lopetusnakyma.PNG)
 
 Lopetusnäkymässä on mahdollista siirtyä aloitusnäkymään "Uusi peli"-nappia painamalla tai sulkea sovellus "Sulje peli"-napilla.
