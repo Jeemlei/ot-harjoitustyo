@@ -1,6 +1,7 @@
 package domain.deck;
 
 /**
+ * Representation of the rule card type.
  *
  * @author Eemeli
  */
