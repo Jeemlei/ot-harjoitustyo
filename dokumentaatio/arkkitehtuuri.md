@@ -21,7 +21,7 @@ jokainen näistä on toteutettu omana [Scene](https://docs.oracle.com/javase/8/j
 
 Käyttöliittymä on pyritty eristämään täysin pelilogiikasta ja se ainoastaan kutsuu sopivin parametrein pelilogiikan toteuttavien olioiden metodeja.
 
-Kun pelissä tapahtuu muutoksia, kutsutaan näkyvillä olevan näkymän metodia update(), joka päivittää näkymän tiedot. Lopetusnäkymällä ei ole metodia update(), sillä se ei sisällä muuttuvia tietoja.
+Kun pelissä tapahtuu muutoksia, kutsutaan näkyvillä olevan näkymän FXML-ohjaimen metodia update(), joka päivittää näkymän tiedot. Lopetusnäkymän ohjaimella ei ole metodia update(), sillä lopetusnäkymä ei sisällä muuttuvia tietoja.
 
 <!---Viikkoon 4 mennessä toteutetut pelilogiikan kannalta oleelliset luokat:--->
 
