@@ -13,7 +13,7 @@ Sovelluksella on ainoastaan yksi käyttäjärooli eli _normaali käyttäjä_.
 
 Sovellus koostuu kolmesta eri näkymästä
 
-![alustavaUI.png](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/alustavaUI.png)
+![alustavaUI.png](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/Kuvat/alustavaUI.png)
 
 Sovellus aukeaa aloitusnäkymään, jossa käyttäjä voi lisätä pelaajia peliin. Pelaajien lisäämisen jälkeen pelin voi aloittaa, mikä siirtää sovelluksen pelinäkymään, jossa varsinainen pelaaminen tapahtuu. 
 
