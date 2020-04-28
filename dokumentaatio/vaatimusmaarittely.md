@@ -56,7 +56,7 @@ Kolmannessa näkymässä pelaaja vahvistaa haluavansa luovuttaa, minkä jälkeen
 
 Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. seuraavilla toiminnallisuuksilla
 
-- [x] Lopetusnäkymä
+- [x] Lopetusnäkymä **TEHTY**
   - Pelin loppuessa siirrytään lopetusnäkymään, jossa on mahdollista aloittaa uusi peli tai sulkea sovellus
 - Eri korttien ominaisuuksiin liittyvän logiikan implementoinit
   - Korttikategoriat (vaatii todennäköisesti suuria muutoksia käyttöliittymään)
