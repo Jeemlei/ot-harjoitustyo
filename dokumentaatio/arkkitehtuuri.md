@@ -23,19 +23,21 @@ Käyttöliittymä on pyritty eristämään täysin pelilogiikasta ja se ainoasta
 
 Kun pelissä tapahtuu muutoksia, kutsutaan näkyvillä olevan näkymän FXML-ohjaimen metodia update(), joka päivittää näkymän tiedot. Lopetusnäkymän ohjaimella ei ole metodia update(), sillä lopetusnäkymä ei sisällä muuttuvia tietoja.
 
-<!---Viikkoon 4 mennessä toteutetut pelilogiikan kannalta oleelliset luokat:--->
+## Pelilogiikka
 
-<!---![vk4 luokkakaavio](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/luokkakaavio_vk4.png)--->
+Alla olevassa kaaviossa on kuvattu pelilogiikan kannalta tärkeät luokat ja niiden suhteet toisiinsa.
 
-<!---GameServicen ja ohjelman muiden osien suhdetta kuvaava luokka/pakkauskaavio:--->
+![Luokkakaavio](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/Kuvat/Luokkakaavio.PNG)
 
-<!---![vk4 pakkausrakenne](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/pakkausrakenne_vk4.png)--->
+Peliä kontrolloidaan [_GameServices_](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/src/main/java/domain/GameServices.java) luokan kautta ja kaavioon on merkattu muutama sen tärkeimmistä metodeista. _GameServices_ sisältää pelissä olevat pelaajat sekä [_Card_](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/src/main/java/domain/deck/Card.java)-rajapinnan toteuttavia kortteja sisältävän korttipakan [_Deck_](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/src/main/java/domain/deck/Deck.java).
 
-### Päätoiminnalisuudet
+_Deck_ pääsee käsiksi korttien tietoihin [_CardsDao_](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/src/main/java/dao/CardsDao.java)-rajapinnan toteuttavan luokan kautta.
+
+## Päätoiminnalisuudet
 
 
 
-#### Seuraavan kortin kääntäminen
+### Seuraavan kortin kääntäminen
 
 Kun pelinäkymässä klikataan painiketta _nextCardButton_ etenee sovelluksen kontrolli seuraavasti:
 
