@@ -155,6 +155,26 @@
             "description":"Se joka ei tiedä miten vesiputous toimii juo viisi (5) huikkaa.",
             "max4plrs":[0,1,0,1,1],
             "max8plrs":[0,1,0,0,1]
+        },
+        {
+            "name":"Galahad",
+            "description":"Pääsit näkemään Graalin linnan ja löysit maljan. Juo Graalin malja tyhjäksi.",
+            "max4plrs":[0,0,0,0,1],
+            "max8plrs":[0,0,0,0,1]
+        }
+    ],
+    "ruleCards":[
+        {
+            "name":"Kainokieli",
+            "description":"Kiroilu on kielletty. Säännön rikkoja juo kaksi (2) huikkaa.",
+            "max4plrs":[1,0,0,0,0],
+            "max8plrs":[1,0,0,0,0]
+        },
+        {
+            "name":"Pokerinaama",
+            "description":"Kasvojen koskeminen on kielletty. Säännön rikkoja juo kaksi (2) huikkaa.",
+            "max4plrs":[1,0,0,0,0],
+            "max8plrs":[1,0,0,0,0]
         }
     ]
 }

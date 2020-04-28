@@ -41,7 +41,7 @@ public class ForfeitSceneController implements Initializable {
      * Updates the playerName-Label with the name of the player currently in
      * turn.
      */
-    public void updatePlayer() {
+    public void update() {
         this.playerName.setText(this.game.getPlayerInTurn());
     }
 

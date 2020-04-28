@@ -58,7 +58,7 @@ public class JuomapeliUI extends Application {
         this.forfeitSceneController.setGameDomain(this.game);
         this.forfeitSceneController.setApplication(this);
         this.forfeitScene = new Scene(forfeitPane);
-        
+
         FXMLLoader endSceneLoader = new FXMLLoader(getClass().getResource("/fxml/EndScene.fxml"));
         Parent endPane = endSceneLoader.load();
         this.endSceneController = endSceneLoader.getController();
@@ -102,18 +102,18 @@ public class JuomapeliUI extends Application {
      * Sets the forfeit scene on the stage and calls the controller to update
      * the playerName label.
      *
-     * @see ui.controllers.ForfeitSceneController#updatePlayer()
+     * @see ui.controllers.ForfeitSceneController#update()
      */
     public void setForfeitScene() {
         this.stage.setScene(this.forfeitScene);
-        this.forfeitSceneController.updatePlayer();
+        this.forfeitSceneController.update();
     }
-    
+
     public void setEndScene() {
         this.stage.setScene(this.endScene);
     }
-    
-    public void closeGame()  {
+
+    public void closeGame() {
         stage.close();
     }
 

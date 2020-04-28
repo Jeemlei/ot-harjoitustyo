@@ -40,12 +40,12 @@ public class EndSceneController implements Initializable {
     public void setApplication(JuomapeliUI application) {
         this.application = application;
     }
-    
+
     @FXML
     private void newGame(ActionEvent event) {
         this.application.setStartScene();
     }
-    
+
     @FXML
     private void quitGame(ActionEvent event) {
         this.application.closeGame();
@@ -57,6 +57,5 @@ public class EndSceneController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-    
+    }
 }

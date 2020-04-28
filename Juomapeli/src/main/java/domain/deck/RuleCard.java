@@ -1,19 +1,19 @@
 package domain.deck;
 
 /**
- * Representation of the basic card type.
  *
  * @author Eemeli
  */
-public class BasicCard implements Card {
+public class RuleCard implements Card {
 
-    private final String name;
-    private final String description;
+    private String name;
+    private String description;
     private final int[] pcs4;
     private final int[] pcs8;
+    private boolean editable;
 
     /**
-     * Basic card object.
+     * Rule card object.
      *
      * @param name name of the card
      *
@@ -25,16 +25,17 @@ public class BasicCard implements Card {
      * @param pcs8 occurrences in the different parts of the deck in a game with
      * a maximum of eight (8) players
      */
-    public BasicCard(String name, String description, int[] pcs4, int[] pcs8) {
+    public RuleCard(String name, String description, int[] pcs4, int[] pcs8) {
         this.name = name;
         this.description = description;
         this.pcs4 = pcs4;
         this.pcs8 = pcs8;
+        this.editable = name.isEmpty();
     }
 
     @Override
     public int getType() {
-        return Card.BASIC_CARD;
+        return Card.RULE_CARD;
     }
 
     @Override
@@ -85,5 +86,29 @@ public class BasicCard implements Card {
             return this.pcs4[4];
         }
         return this.pcs8[4];
+    }
+
+    /**
+     * Tells if rule is editable.
+     * 
+     * @return true if rule is editable, otherwise false
+     */
+    public boolean isEditable() {
+        return this.editable;
+    }
+    
+    /**
+     * Changes the name and the description of the RuleCard if editable.
+     * 
+     * @param name name of the rule
+     * 
+     * @param description description of the rule
+     */
+    public void setRule(String name, String description) {
+        if (this.editable) {
+            this.name = name;
+            this.description = description;
+            this.editable = false;
+        }
     }
 }

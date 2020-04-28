@@ -77,13 +77,17 @@ public class Deck {
             switch (card.getType()) {
                 case Card.BASIC_CARD:
                     this.addBasicCard(card);
+                    break;
+                case Card.RULE_CARD:
+                    this.addRuleCard(card);
+                    break;
             }
         }
     }
 
     private void addBasicCard(Card card) {
         Random r = new Random();
-        for (int i = 0; i < card.getPcsRandom(playerCount); i++) {
+        for (int i = 0; i < card.getPcsRandom(this.playerCount); i++) {
             switch (r.nextInt(4)) {
                 case 0:
                     this.pcsFirst.add(new BasicCard(card.getName(), card.getDescription(), new int[0], new int[0]));
@@ -99,17 +103,35 @@ public class Deck {
                     break;
             }
         }
-        for (int i = 0; i < card.getPcsFirst(playerCount); i++) {
+        for (int i = 0; i < card.getPcsFirst(this.playerCount); i++) {
             this.pcsFirst.add(new BasicCard(card.getName(), card.getDescription(), new int[0], new int[0]));
         }
-        for (int i = 0; i < card.getPcsSecond(playerCount); i++) {
+        for (int i = 0; i < card.getPcsSecond(this.playerCount); i++) {
             this.pcsSecond.add(new BasicCard(card.getName(), card.getDescription(), new int[0], new int[0]));
         }
-        for (int i = 0; i < card.getPcsThird(playerCount); i++) {
+        for (int i = 0; i < card.getPcsThird(this.playerCount); i++) {
             this.pcsThird.add(new BasicCard(card.getName(), card.getDescription(), new int[0], new int[0]));
         }
-        for (int i = 0; i < card.getPcsFourth(playerCount); i++) {
+        for (int i = 0; i < card.getPcsFourth(this.playerCount); i++) {
             this.pcsFourth.add(new BasicCard(card.getName(), card.getDescription(), new int[0], new int[0]));
+        }
+    }
+
+    private void addRuleCard(Card card) {
+        Random r = new Random();
+        for (int i = 0; i < card.getPcsRandom(this.playerCount) + card.getPcsFirst(this.playerCount)
+                + card.getPcsSecond(this.playerCount) + card.getPcsThird(this.playerCount) + card.getPcsFourth(this.playerCount); i++) {
+            switch (r.nextInt(3)) {
+                case 0:
+                    this.pcsFirst.add(new RuleCard(card.getName(), card.getDescription(), new int[0], new int[0]));
+                    break;
+                case 1:
+                    this.pcsSecond.add(new RuleCard(card.getName(), card.getDescription(), new int[0], new int[0]));
+                    break;
+                case 2:
+                    this.pcsThird.add(new RuleCard(card.getName(), card.getDescription(), new int[0], new int[0]));
+                    break;
+            }
         }
     }
 
@@ -128,6 +150,9 @@ public class Deck {
      * @return Card-object from the top of the deck
      */
     public Card nextCard() {
+        if (this.deck.isEmpty()) {
+            return new EndCard();
+        }
         return this.deck.pollFirst();
     }
 }

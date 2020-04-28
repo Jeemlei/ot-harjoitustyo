@@ -8,6 +8,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import domain.GameServices;
 import domain.deck.Card;
+import domain.deck.RuleCard;
+import java.util.ArrayList;
 import ui.JuomapeliUI;
 
 /**
@@ -22,7 +24,7 @@ public class GameSceneController implements Initializable {
 
     /**
      * Sets the game logic used by this controller.
-     * 
+     *
      * @param gameServices object with the game services
      */
     public void setGameDomain(GameServices gameServices) {
@@ -31,7 +33,7 @@ public class GameSceneController implements Initializable {
 
     /**
      * Sets the main UI-class used by this controller.
-     * 
+     *
      * @param application UI with a scene controlled by this controller
      */
     public void setApplication(JuomapeliUI application) {
@@ -44,6 +46,7 @@ public class GameSceneController implements Initializable {
     public void update() {
         this.updatePlayerInTurn();
         this.updateCardInfo();
+        this.updateActiveRules();
     }
 
     @FXML
@@ -59,6 +62,17 @@ public class GameSceneController implements Initializable {
     private Label diceDisplay;
 
     @FXML
+    private Label ruleCard1;
+
+    @FXML
+    private Label ruleCard2;
+
+    @FXML
+    private Label ruleCard3;
+
+    private Label[] ruleCardLabels;
+
+    @FXML
     private void forfeit(ActionEvent event) {
         this.application.setForfeitScene();
     }
@@ -66,8 +80,7 @@ public class GameSceneController implements Initializable {
     @FXML
     private void nextTurn(ActionEvent event) {
         this.game.nextTurn();
-        this.updatePlayerInTurn();
-        this.updateCardInfo();
+        this.update();
     }
 
     @FXML
@@ -87,6 +100,20 @@ public class GameSceneController implements Initializable {
                 break;
             case Card.BASIC_CARD:
                 this.basicCard(card);
+                break;
+            case Card.RULE_CARD:
+                this.ruleCard(card);
+                break;
+        }
+    }
+
+    private void updateActiveRules() {
+        ArrayList<RuleCard> rules = this.game.getActiveRules();
+        for (int i = 0; i < rules.size(); i++) {
+            this.ruleCardLabels[i].setText(rules.get(i).getName());
+        }
+        for (int i = rules.size(); i < 3; i++) {
+            this.ruleCardLabels[i].setText("");
         }
     }
 
@@ -98,11 +125,18 @@ public class GameSceneController implements Initializable {
         this.cardName.setText(card.getName());
         this.cardDescription.setText(card.getDescription());
     }
+    
+    private void ruleCard(Card card) {
+        this.cardName.setText(card.getName());
+        this.cardDescription.setText(card.getDescription());
+    }
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        Label[] labels = {this.ruleCard1, this.ruleCard2, this.ruleCard3};
+        this.ruleCardLabels = labels;
     }
 }

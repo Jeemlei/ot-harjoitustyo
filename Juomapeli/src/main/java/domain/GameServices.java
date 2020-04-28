@@ -1,9 +1,8 @@
 package domain;
 
-import domain.deck.Card;
-import domain.deck.Deck;
-import domain.deck.EndCard;
+import domain.deck.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Random;
 
 /**
@@ -14,16 +13,19 @@ import java.util.Random;
  */
 public class GameServices {
 
-    private ArrayList<String> players;
+    private ArrayList<String> playerOrder;
+    private HashMap<String, Player> players;
     private Deck deck;
     private int turn;
     private Card cardInTurn;
+    private ArrayList<RuleCard> activeRules;
 
     /**
      * Creates new game platform.
      */
     public GameServices() {
-        this.players = new ArrayList<>();
+        this.playerOrder = new ArrayList<>();
+        this.players = new HashMap<>();
     }
 
     /**
@@ -35,14 +37,15 @@ public class GameServices {
      */
     public String addPlayer(String playerName) {
         playerName = playerName.trim();
-        if (this.players.contains(playerName)) {
+        if (this.playerOrder.contains(playerName)) {
             return "Pelaaja on jo lisätty!";
         } else if (playerName.length() < 1) {
             return "Kirjoita pelaajan nimi!";
-        } else if (this.players.size() >= 8) {
+        } else if (this.playerOrder.size() >= 8) {
             return "Peli on täynnä!";
         }
-        this.players.add(playerName);
+        this.playerOrder.add(playerName);
+        this.players.put(playerName, new Player(playerName));
         return "";
     }
 
@@ -54,20 +57,23 @@ public class GameServices {
      * @return possible error message
      */
     public String removePlayer(int playerNo) {
-        if (playerNo >= this.players.size() || playerNo < 0) {
+        if (playerNo >= this.playerOrder.size() || playerNo < 0) {
             return "Pelaajan poistaminen epäonnistui!";
         }
-        this.players.remove(playerNo);
+        this.players.remove(this.playerOrder.get(playerNo));
+        this.playerOrder.remove(playerNo);
         return "";
     }
 
     /**
-     * Creates new Deck, based on the number of players in the game.
+     * Creates new Deck, based on the number of playerOrder in the game.
      */
     public void initGame() {
         this.deck = new Deck();
         this.deck.generateNewDeck(this.getPlayerCount());
-        this.cardInTurn = this.deck.nextCard();
+        this.activeRules = new ArrayList<>();
+        this.turn--;
+        this.nextTurn();
     }
 
     /**
@@ -79,6 +85,9 @@ public class GameServices {
             this.turn = 0;
         }
         this.cardInTurn = this.deck.nextCard();
+        if (this.cardInTurn.getType() == Card.RULE_CARD) {
+            this.activeRules.add((RuleCard) this.cardInTurn);
+        }
     }
 
     /**
@@ -112,16 +121,16 @@ public class GameServices {
      * @return number of players in the game
      */
     public int getPlayerCount() {
-        return this.players.size();
+        return this.playerOrder.size();
     }
 
     /**
-     * Tells the names of the players in the game.
+     * Tells the names of the playerOrder in the game.
      *
-     * @return ArrayList of the names of the players
+     * @return ArrayList of the names of the playerOrder
      */
     public ArrayList<String> getPlayers() {
-        return this.players;
+        return this.playerOrder;
     }
 
     /**
@@ -141,6 +150,15 @@ public class GameServices {
      * @return name of the player currently in turn
      */
     public String getPlayerInTurn() {
-        return this.players.get(this.turn);
+        return this.playerOrder.get(this.turn);
+    }
+
+    /**
+     * Tells the rules currently active.
+     * 
+     * @return ArrayList of the currently active RuleCard-objects
+     */
+    public ArrayList<RuleCard> getActiveRules() {
+        return this.activeRules;
     }
 }

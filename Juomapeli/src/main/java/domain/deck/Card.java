@@ -15,6 +15,10 @@ public interface Card {
      * The card type constant for BasicCard
      */
     static final int BASIC_CARD = 1;
+    /**
+     * The card type constant for RuleCard
+     */
+    static final int RULE_CARD = 2;
 
     /**
      * Tells the type of the card.

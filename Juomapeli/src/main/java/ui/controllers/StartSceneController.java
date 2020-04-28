@@ -22,7 +22,7 @@ public class StartSceneController implements Initializable {
 
     /**
      * Sets the game logic used by this controller.
-     * 
+     *
      * @param gameServices object with the game services
      */
     public void setGameDomain(GameServices gameServices) {
@@ -31,7 +31,7 @@ public class StartSceneController implements Initializable {
 
     /**
      * Sets the main UI-class used by this controller.
-     * 
+     *
      * @param application UI with a scene controlled by this controller
      */
     public void setApplication(JuomapeliUI application) {
@@ -47,7 +47,7 @@ public class StartSceneController implements Initializable {
 
     /**
      * Updates the start scene.
-     * 
+     *
      * @param warningMsg warning message to be displayed
      */
     public void update(String warningMsg) {
@@ -123,7 +123,7 @@ public class StartSceneController implements Initializable {
 
     @FXML
     private Button b7;
-    
+
     @FXML
     private Button startButton;
 

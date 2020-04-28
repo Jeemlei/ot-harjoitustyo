@@ -1,7 +1,8 @@
 package dao;
 
-import domain.deck.BasicCard;
 import domain.deck.Card;
+import domain.deck.BasicCard;
+import domain.deck.RuleCard;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,6 +29,7 @@ public class JSONCardsDao implements CardsDao {
      */
     public JSONCardsDao() throws IOException {
         this.getJSON();
+        this.cards = new ArrayList<>();
         this.parseCards();
     }
 
@@ -48,8 +50,8 @@ public class JSONCardsDao implements CardsDao {
     }
 
     private void parseCards() {
-        this.cards = new ArrayList<>();
         this.parseBasicCards();
+        this.parseRuleCards();
     }
 
     private void parseBasicCards() {
@@ -60,6 +62,17 @@ public class JSONCardsDao implements CardsDao {
             int[] pcs4 = parsePcsArray(cardArr.getJSONObject(i).getJSONArray("max4plrs"));
             int[] pcs8 = parsePcsArray(cardArr.getJSONObject(i).getJSONArray("max8plrs"));
             this.cards.add(new BasicCard(name, description, pcs4, pcs8));
+        }
+    }
+
+    private void parseRuleCards() {
+        JSONArray cardArr = this.jsonFile.getJSONArray("ruleCards");
+        for (int i = 0; i < cardArr.length(); i++) {
+            String name = cardArr.getJSONObject(i).getString("name");
+            String description = cardArr.getJSONObject(i).getString("description");
+            int[] pcs4 = parsePcsArray(cardArr.getJSONObject(i).getJSONArray("max4plrs"));
+            int[] pcs8 = parsePcsArray(cardArr.getJSONObject(i).getJSONArray("max8plrs"));
+            this.cards.add(new RuleCard(name, description, pcs4, pcs8));
         }
     }
 
