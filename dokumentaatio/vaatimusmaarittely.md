@@ -29,42 +29,42 @@ Jos pelissä on enää yksi pelaaja tai kortit loppuvat, sovellus siirtyy lopetu
 
 ### Ennen pelin alkua
 
-- [x] Pelaajan lisääminen **TEHTY**
+- [x] Pelaajan lisääminen
   - Pelaajanimen tulee olla uniikki jokaisella kyseisen kierroksen pelaajalla ja sisältää vähintään 1 merkki
   - Pelaajia voi lisätä korkeintaan 8
-- [x] Pelaajan poistaminen **TEHTY**
+- [x] Pelaajan poistaminen
   - Pelaajan voi vielä poistaa ennen pelin aloittamista
-- [x] Pelin aloittaminen **TEHTY**
+- [x] Pelin aloittaminen
   - Pelissä täytyy olla vähintään 3 pelaajaa lisättynä
 
 ### Pelin alkaessa
 
-- [x] Ohjelma hakee kortit muistista **TEHTY**
+- [x] Ohjelma hakee kortit muistista
   - Korttien tiedot on tallennettuna tiedostoon tai tietokantaan
-- [x] Ohjelma luo korteista pakan **TEHTY**
+- [x] Ohjelma luo korteista pakan
   - Kortit laitetaan pakkaan satunnaiseen järjestykseen
   - Pakan koko riippuu pelaajien lukumäärästä
 
 ### Pelin aikana
 
-- [x] Seuraavan kortin kääntäminen **TEHTY**
+- [x] Seuraavan kortin kääntäminen
   - Vuoro siirtyy seuraavalle pelaajalle
   - Seuraavan kortin tiedot ilmestyvät näkyviin
-- [x] Aktiivisena olevien sääntö-korttien tarkastelu **TEHTY**
-- [x] Nopan heittäminen **TEHTY**
-- [x] Pelaajan luovuttaminen **TEHTY**
+- [x] Aktiivisena olevien sääntö-korttien tarkastelu
+- [x] Nopan heittäminen
+- [x] Pelaajan luovuttaminen
   - Tupla varmistus ennen pelaajan poistoa
   
 ### Pelin päätyttyä
 
-- [x] Siirtyminen lopetusnäkymään **TEHTY**
+- [x] Siirtyminen lopetusnäkymään
   - Pelin loppuessa siirrytään lopetusnäkymään, jossa on mahdollista aloittaa uusi peli tai sulkea sovellus
 
 ## Jatkokehitysideoita
 
-Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. seuraavilla toiminnallisuuksilla
+Kurssin jälkeen peliä voi harrastuksena laajentaa esim. seuraavilla toiminnallisuuksilla
 
-- Eri korttien ominaisuuksiin liittyvän logiikan implementoinit
+- Eri korttien ominaisuuksiin liittyvän logiikan implementoinnit
   - Korttikategoriat (vaatii todennäköisesti suuria muutoksia käyttöliittymään)
   - Korttien kohdistaminen tiettyihin pelaajiin
   - Pelaajien hallussa olevien kyky- ja tiketti-korttien tarkastelu ja käyttäminen
@@ -79,3 +79,5 @@ Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. seura
   - Uusien korttien lisääminen peliin (*Mahdollisesti liian monimutkainen*)
   - Itselisättyjen korttien hallinnointi ja poistaminen
 - Käyttöliittymään viides näkymä pelin ohjeille
+- Android- ja selain-version kehittäminen
+- Online/etäpelimahdollisuus
