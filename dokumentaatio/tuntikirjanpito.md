@@ -35,4 +35,4 @@
 | 28.4.  | 2      | Dokumentointia |
 |        | 2      | Sääntökorttien toteutusta |
 |  6.5.  | 1      | Dokumentaation viimeistelyä |
-|**yht.**| **48** | |
+|**yht.**| **49** | |
