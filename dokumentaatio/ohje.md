@@ -28,7 +28,7 @@ Pelinäkymässä näkyy vuorossa olevan pelaajan nimi sekä avatun kortin nimi j
 
 Vuoro siirtyy seuraavalle pelaajalle "Seuraava kortti"-nappia painamalla.
 
-Muutamat kortit vaativat nopan heittoa, jota varten on "Heitä"-nappi näkymän oikeassa alalaidassa.
+Muutamat kortit vaativat nopan heittoa, jota varten on "Heitä"-nappi näkymän alalaidassa.
 
 Oikeassa laidassa näkyvät voimassa olevien sääntökorttien nimet.
 
