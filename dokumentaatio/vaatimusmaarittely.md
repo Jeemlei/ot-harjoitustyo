@@ -50,21 +50,24 @@ Jos pelissä on enää yksi pelaaja tai kortit loppuvat, sovellus siirtyy lopetu
 - [x] Seuraavan kortin kääntäminen **TEHTY**
   - Vuoro siirtyy seuraavalle pelaajalle
   - Seuraavan kortin tiedot ilmestyvät näkyviin
+- [x] Aktiivisena olevien sääntö-korttien tarkastelu **TEHTY**
 - [x] Nopan heittäminen **TEHTY**
 - [x] Pelaajan luovuttaminen **TEHTY**
   - Tupla varmistus ennen pelaajan poistoa
+  
+### Pelin päätyttyä
+
+- [x] Siirtyminen lopetusnäkymään **TEHTY**
+  - Pelin loppuessa siirrytään lopetusnäkymään, jossa on mahdollista aloittaa uusi peli tai sulkea sovellus
 
 ## Jatkokehitysideoita
 
 Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. seuraavilla toiminnallisuuksilla
 
-- [x] Lopetusnäkymä **TEHTY**
-  - Pelin loppuessa siirrytään lopetusnäkymään, jossa on mahdollista aloittaa uusi peli tai sulkea sovellus
 - Eri korttien ominaisuuksiin liittyvän logiikan implementoinit
   - Korttikategoriat (vaatii todennäköisesti suuria muutoksia käyttöliittymään)
   - Korttien kohdistaminen tiettyihin pelaajiin
   - Pelaajien hallussa olevien kyky- ja tiketti-korttien tarkastelu ja käyttäminen
-  - [x] Aktiivisena olevien sääntö-korttien tarkastelu **TEHTY**
   - Aktiivisena olevien sääntö-korttien poistaminen tiketti-korteilla
   - jne.
 - Juomalaskurit pelaajille
