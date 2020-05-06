@@ -40,7 +40,7 @@ Jos pelissä on enää yksi pelaaja tai kortit loppuvat, sovellus siirtyy lopetu
 ### Pelin alkaessa
 
 - [x] Ohjelma hakee kortit muistista
-  - Korttien tiedot on tallennettuna tiedostoon tai tietokantaan
+  - Korttien tiedot on tallennettuna JSON-tiedostoon
 - [x] Ohjelma luo korteista pakan
   - Kortit laitetaan pakkaan satunnaiseen järjestykseen
   - Pakan koko riippuu pelaajien lukumäärästä
