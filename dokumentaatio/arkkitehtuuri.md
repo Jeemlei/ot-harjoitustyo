@@ -33,6 +33,10 @@ Peliä kontrolloidaan [_GameServices_](https://github.com/Jeemlei/ot-harjoitusty
 
 _Deck_ pääsee käsiksi korttien tietoihin [_CardsDao_](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/src/main/java/dao/CardsDao.java)-rajapinnan toteuttavan luokan kautta.
 
+Sovelluksen eri osien suhteita kuvaava luokka/pakkauskaavio:
+
+![luokka/pakkauskaavio](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/Kuvat/luokat%26pakkaukset.png)
+
 ## Päätoiminnalisuudet
 
 
