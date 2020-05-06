@@ -78,6 +78,5 @@ Kurssin jälkeen peliä voi harrastuksena laajentaa esim. seuraavilla toiminnall
   - Omavalintaisten korttien jättäminen pois pelistä
   - Uusien korttien lisääminen peliin (*Mahdollisesti liian monimutkainen*)
   - Itselisättyjen korttien hallinnointi ja poistaminen
-- Käyttöliittymään viides näkymä pelin ohjeille
 - Android- ja selain-version kehittäminen
 - Online/etäpelimahdollisuus
