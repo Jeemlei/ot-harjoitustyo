@@ -34,4 +34,5 @@
 |        | 0,5    | Arkkitehtuurikuvauksen rakentamista |
 | 28.4.  | 2      | Dokumentointia |
 |        | 2      | Sääntökorttien toteutusta |
+|  6.5.  | 1      | Dokumentaation viimeistelyä |
 |**yht.**| **48** | |

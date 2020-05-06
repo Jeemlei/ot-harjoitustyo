@@ -7,19 +7,21 @@ Itse kehitetyn fyysisen korttipohjaisen juomapelin toteutus sovelluksena.
 
 ## Käyttäjät
 
-Sovelluksella on ainoastaan yksi käyttäjärooli eli _normaali käyttäjä_.
+Sovelluksella on ainoastaan yksi käyttäjärooli eli ns. _normaali käyttäjä_.
 
 ## Käyttöliittymäluonnos
 
-Sovellus koostuu kolmesta eri näkymästä
+Sovellus koostuu neljästä eri näkymästä
 
-![alustavaUI.png](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/Kuvat/alustavaUI.png)
+![alustavaUI.png](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/Kuvat/UI.png)
 
 Sovellus aukeaa aloitusnäkymään, jossa käyttäjä voi lisätä pelaajia peliin. Pelaajien lisäämisen jälkeen pelin voi aloittaa, mikä siirtää sovelluksen pelinäkymään, jossa varsinainen pelaaminen tapahtuu. 
 
-Pelinäkymässä näytetään vuorossa oleva pelaaja sekä viimeksi käännetty kortti. Vuorossa olevan pelaajan on mahdollista luovuttaa. Tämä siirtää sovelluksen kolmanteen näkymään.
+Pelinäkymässä näytetään vuorossa oleva pelaaja sekä viimeksi käännetty kortti ja voimassa olevat sääntökortit. Vuorossa olevan pelaajan on mahdollista luovuttaa. Tämä siirtää sovelluksen luovutusnäkymään.
 
-Kolmannessa näkymässä pelaaja vahvistaa haluavansa luovuttaa, minkä jälkeen sovellus siirtyy takaisin pelinäkymään.
+Luovutusnäkymässä pelaaja vahvistaa haluavansa luovuttaa, minkä jälkeen sovellus siirtyy takaisin pelinäkymään.
+
+Jos pelissä on enää yksi pelaaja tai kortit loppuvat, sovellus siirtyy lopetusnäkymään. Lopetusnäkymässä sovelluksen sulkea tai valita uuden pelin, mikä siirtää sovelluksen takaisin aloitusnäkymään.
 
 ## Perusversion tarjoama toiminnallisuus
 
