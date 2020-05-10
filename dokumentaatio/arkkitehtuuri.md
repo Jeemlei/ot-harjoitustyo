@@ -41,7 +41,12 @@ Sovelluksen eri osien suhteita kuvaava luokka/pakkauskaavio:
 
 ### Uuden korttipakan generoiminen
 
+Pelin aloituksen yhteydessä generoidaan uusi korttipakka, jonka koko riippuu pelaajien määrästä.
+Seuraava sekvenssikaavio kuvaa sovelluksen kontrollin etenemistä, kun [_Deck_](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/src/main/java/domain/deck/Deck.java)-olion metodia [generateNewDeck(int playerCount)](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/src/main/java/domain/deck/Deck.java#L44) kutsutaan neljän pelaajan pelissä.
+
 ![Sekvenssikaavio](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/Kuvat/Uusi_pakka_sekvenssi.png)
+
+
 
 ### Seuraavan kortin kääntäminen
 
