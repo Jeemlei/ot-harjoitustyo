@@ -37,4 +37,4 @@
 | 6.5.   | 1      | Vaatimusmäärittelyn viimeistely |
 | 10.5.  | 1,5    | Arkkitetuurikuvauksen viimeistely |
 |        | 1      | Testausdokumentin kirjoitus |
-|**yht.**| **50,5** | |
+|**yht.**| **51,5** | |
