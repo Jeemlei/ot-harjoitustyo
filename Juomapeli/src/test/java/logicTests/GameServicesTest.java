@@ -3,6 +3,7 @@ package logicTests;
 import domain.GameServices;
 import domain.deck.Card;
 import domain.deck.EndCard;
+import domain.deck.RuleCard;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -109,8 +110,15 @@ public class GameServicesTest {
     }
     
     @Test
-    public void initializeGameDeck() {
+    public void initializeGameDeckWithMinPlayers() {
         this.addPlayers(3);
+        this.game.initGame();
+        assertThat(this.game.getCardInTurn(), instanceOf(Card.class));
+    }
+    
+    @Test
+    public void initializeGameDeckWithMaxPlayers() {
+        this.addPlayers(8);
         this.game.initGame();
         assertThat(this.game.getCardInTurn(), instanceOf(Card.class));
     }
@@ -152,5 +160,19 @@ public class GameServicesTest {
         this.game.forfeitPlayerInTurn();
         this.game.forfeitPlayerInTurn();
         assertThat(this.game.getCardInTurn(), instanceOf(EndCard.class));
+    }
+    
+    @Test
+    public void editableRuleCanBeEdited() {
+        RuleCard card = new RuleCard("", "", new int[0], new int[0]);
+        card.setRule("A", "A");
+        assertThat(card.getDescription(), is("A"));
+    }
+    
+    @Test
+    public void uneditableRuleCanNotBeEdited() {
+        RuleCard card = new RuleCard("A", "", new int[0], new int[0]);
+        card.setRule("A", "A");
+        assertThat(card.getDescription(), is(""));
     }
 }

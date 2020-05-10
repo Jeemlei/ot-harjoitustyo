@@ -119,8 +119,7 @@ public class Deck {
 
     private void addRuleCard(Card card) {
         Random r = new Random();
-        for (int i = 0; i < card.getPcsRandom(this.playerCount) + card.getPcsFirst(this.playerCount)
-                + card.getPcsSecond(this.playerCount) + card.getPcsThird(this.playerCount) + card.getPcsFourth(this.playerCount); i++) {
+        for (int i = 0; i < card.getPcsRandom(this.playerCount); i++) {
             switch (r.nextInt(3)) {
                 case 0:
                     this.pcsFirst.add(new RuleCard(card.getName(), card.getDescription(), new int[0], new int[0]));

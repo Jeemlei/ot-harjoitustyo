@@ -59,34 +59,22 @@ public class RuleCard implements Card {
 
     @Override
     public int getPcsFirst(int playerCount) {
-        if (playerCount <= 4) {
-            return this.pcs4[1];
-        }
-        return this.pcs8[1];
+        return 0;
     }
 
     @Override
     public int getPcsSecond(int playerCount) {
-        if (playerCount <= 4) {
-            return this.pcs4[2];
-        }
-        return this.pcs8[2];
+        return 0;
     }
 
     @Override
     public int getPcsThird(int playerCount) {
-        if (playerCount <= 4) {
-            return this.pcs4[3];
-        }
-        return this.pcs8[3];
+        return 0;
     }
 
     @Override
     public int getPcsFourth(int playerCount) {
-        if (playerCount <= 4) {
-            return this.pcs4[4];
-        }
-        return this.pcs8[4];
+        return 0;
     }
 
     /**
