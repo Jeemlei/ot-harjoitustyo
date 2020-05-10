@@ -1,6 +1,18 @@
 # Testausdokumentti
 
-## Testikattavuus
+## Yksikkö- ja intergraatiotestaus
+
+### Pelilogiikka
+
+[GameServicesTest.java](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/src/test/java/logicTests/GameServicesTest.java) testaa kaikki pelilogiikan toiminnallisuudet.
+
+[_GameServices_](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/src/main/java/domain/GameServices.java)-luokka käyttää toiminnassaan kaikkia pakkauksen [domain.deck](https://github.com/Jeemlei/ot-harjoitustyo/tree/master/Juomapeli/src/main/java/domain/deck) luokkia ja välillisesti myös [DAO-luokkia](https://github.com/Jeemlei/ot-harjoitustyo/tree/master/Juomapeli/src/main/java/dao), joten myös näiden toiminta tulee testatuksi pelilogiikan yhteydessä.
+
+### DAO
+
+[DaoTest.java](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/src/test/java/logicTests/DaoTest.java) testaa, että [_JSONCardsDao_](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/src/main/java/dao/JSONCardsDao.java) lukee korttien tiedot sisältävän JSON-tiedoston onnistuneesti.
+
+### Testikattavuus
 
 Käyttöliittymäkerrosta lukuunottamatta sovelluksen testauksen rivikattavuus on 95% ja haarautumakattavuus 93%
 
