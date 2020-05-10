@@ -1,4 +1,4 @@
-# Arkkitehtuurikuvaus
+﻿# Arkkitehtuurikuvaus
 
 ## Rakenne
 
@@ -39,7 +39,9 @@ Sovelluksen eri osien suhteita kuvaava luokka/pakkauskaavio:
 
 ## Päätoiminnalisuudet
 
+### Uuden korttipakan generoiminen
 
+![Sekvenssikaavio](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/Kuvat/Uusi_pakka_sekvenssi.png)
 
 ### Seuraavan kortin kääntäminen
 
