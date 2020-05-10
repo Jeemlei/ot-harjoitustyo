@@ -3,7 +3,6 @@
 ## Sovelluksen tarkoitus
 
 Itse kehitetyn fyysisen korttipohjaisen juomapelin toteutus sovelluksena. 
-[kortit](https://drive.google.com/drive/folders/16hBqs6dDaSH-T-GKFYN9Hh7Yt22KrmyP?usp=sharing)
 
 ## Käyttäjät
 
