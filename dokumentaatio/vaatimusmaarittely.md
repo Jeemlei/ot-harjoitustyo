@@ -20,7 +20,7 @@ Pelinäkymässä näytetään vuorossa oleva pelaaja sekä viimeksi käännetty 
 
 Luovutusnäkymässä pelaaja vahvistaa haluavansa luovuttaa, minkä jälkeen sovellus siirtyy takaisin pelinäkymään.
 
-Jos pelissä on enää yksi pelaaja tai kortit loppuvat, sovellus siirtyy lopetusnäkymään. Lopetusnäkymässä sovelluksen sulkea tai valita uuden pelin, mikä siirtää sovelluksen takaisin aloitusnäkymään.
+Jos pelissä on enää yksi pelaaja tai kortit loppuvat, sovellus siirtyy lopetusnäkymään. Lopetusnäkymässä sovelluksen voi sulkea tai valita uuden pelin, mikä siirtää sovelluksen takaisin aloitusnäkymään.
 
 ## Perusversion tarjoama toiminnallisuus
 
