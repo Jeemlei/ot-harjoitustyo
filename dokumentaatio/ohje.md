@@ -1,6 +1,6 @@
 ﻿# Käyttöohje
 
-Lataa tiedosto [JAR-tiedosto](https://github.com/Jeemlei/ot-harjoitustyo/releases/tag/viikko7)
+Lataa [JAR-tiedosto](https://github.com/Jeemlei/ot-harjoitustyo/releases/tag/viikko7)
 
 ## Ohjelman käynnistäminen
 
