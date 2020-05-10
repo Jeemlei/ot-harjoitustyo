@@ -36,4 +36,5 @@
 |        | 2      | Sääntökorttien toteutusta |
 | 6.5.   | 1      | Vaatimusmäärittelyn viimeistely |
 | 10.5.  | 1,5    | Arkkitetuurikuvauksen viimeistely |
+|        | 1      | Testauksen dokumentointi |
 |**yht.**| **50,5** | |
