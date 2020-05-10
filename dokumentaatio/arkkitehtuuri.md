@@ -46,7 +46,7 @@ Seuraava sekvenssikaavio kuvaa sovelluksen kontrollin etenemistä, kun [_Deck_](
 
 ![Sekvenssikaavio](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/dokumentaatio/Kuvat/Uusi_pakka_sekvenssi.png)
 
-
+Yksinkertaistettuna [_Deck_](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/src/main/java/domain/deck/Deck.java) luo ensin neljä erillistä pakan osaa, joihin se lisää korttien tietojen perusteella tietyn määrä kutakin korttia. Tämän jälkeen jokainen pakan neljännes sekoitetaan itsenäisesti ja pinotaan lopulta yhdeksi koko pakkaa edustavaksi [_ArrayDeque_](https://docs.oracle.com/javase/7/docs/api/java/util/ArrayDeque.html):ksi. Viimeisenä pakan pohjalle asetetaan vielä [_EndCard_](https://github.com/Jeemlei/ot-harjoitustyo/blob/master/Juomapeli/src/main/java/domain/deck/EndCard.java).
 
 ### Seuraavan kortin kääntäminen
 
